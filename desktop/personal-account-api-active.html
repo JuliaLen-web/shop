@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>1win shop</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+   <style>
+    @import url("../css/style.css");
+   </style>
+ </head>
+ <body>
+  <div class="root">
+    <nav class="navigation">
+      <div class="navigation__logo-container">
+        <img class="navigation__logo small" src="../img/logo.svg">
+      </div>
+      <div class="navigation__profile">
+        <img class="navigation__profile-img" src="../img/profile.png">
+        <div class="navigation__profile-text">
+          <div class="navigation__profile-email">@john4</div>
+          <div class="navigation__profile-name">John Doe</div>
+        </div>
+      </div>
+      <div class="navigation__list">
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/basket.svg">
+          <div class="navigation__item-text">Корзина</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
+          <div class="navigation__item-text">Магазин</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
+          <div class="navigation__item-text">Приложения</div>
+        </div>
+        <div class="navigation__item active">
+          <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
+          <div class="navigation__item-text">API</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
+          <div class="navigation__item-text">Личный кабинет</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/edit-square.svg">
+          <div class="navigation__item-text">Лента</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/chat.svg">
+          <div class="navigation__item-text">Контакты</div>
+        </div>
+        <div class="navigation__item">
+          <img class="navigation__item-icon" src="../img/icon-nav/star.svg">
+          <div class="navigation__item-text">Бонусы</div>
+        </div>
+      </div>
+      <div class="navigation__balance top">
+        <div class="navigation__balance-text">
+          <div class="navigation__balance-title">Баланс</div>
+          <div class="navigation__balance-subtitle">$ 229.92</div>
+        </div>
+        <button class="navigation__balance-button">
+          <img class="navigation__balance-button-icon" src="../img/plus.svg">
+        </button>
+      </div>
+      <div class="navigation__support">
+        <div class="navigation__support-text">
+          <div class="navigation__support-title">Ваш менеджер</div>
+          <div class="navigation__support-subtitle">@username</div>
+        </div>
+        <button class="navigation__support-button">
+          <img class="navigation__support-button-icon" src="../img/message.svg">
+        </button>
+      </div>
+      <div class="navigation__license">
+        <div class="navigation__license-text">
+          <div>Все права защинены</div>
+          <div>2021 © 1win Shop</div>
+        </div>
+        <div class="navigation__license-lang">
+          <img class="navigation__license-lang-img" src="../img/ru.svg">
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main__content">
+        <div class="main__title">API</div>
+
+        <div class="main__nav-personal shopping-history">
+          <div class="main__nav-item">Обзор</div>
+          <div class="main__nav-item">Пополнение баланса </div>
+          <div class="main__nav-item">Мои приложения</div>
+          <div class="main__nav-item">Мои FB аккаунты / BM</div>
+          <div class="main__nav-item">История покупок</div>
+          <div class="main__nav-item">Сессии / доступ в ЛК</div>
+          <div class="main__nav-item active">API</div>
+        </div>
+
+        <div class="main__api-active">
+          <div class="main__api-active-title">Как это работает?</div>
+          <div class="main__api-active-subtitle">
+            С помощью нашего API-сервиса, вы сможете контролировать, а 
+            также автоматизировать работу личного кабинета и приобретаемых услуг. 
+            Необходимо запросить у администрации API-ключ, можете написать нам в 
+            Telegram <a class="main__api-active-subtitle-link">@CpaStore.</a> После 
+            выдачи API-ключа, Вам будут доступны все методы, перечисленные ниже.
+          </div>
+          <div class="main__notify warning api-active">Все ответы приходят в формате Json. И у всех ответов есть значение status по которому можно судить о состоянии ответа, успешный он, с ошибкой или иной, у каждого API метода расписан пласт выдаваемых им status, прочитайте про каждый, это поможет избежать ошибок в дальнейшем при использовании API.</div>
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/api-key.svg">
+                  <div class="main__api-active-form-header-title">Проверка API-ключа</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для тестирования API-ключа, а также отображение списка прав</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Ключ в рабочем состоянии, запрос составлен верно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id<br>
+            status="ban" - Ключ был заблокирован за нарушение правил, смотрите ban_reason
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/balance.svg">
+                  <div class="main__api-active-form-header-title">Информация о балансе</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для получения инфорамции о состоянии баланса личного кабинета</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/gamepad.svg">
+                  <div class="main__api-active-form-header-title">Список ваших приложений</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для получения списка арендованных / купленных / забронированных приложений</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id<br>
+            APP status="active" - Прилка активна<br>
+            APP status="close" - Владение прилкой закрыто<br>
+            APP status="unpaid" - Прилка неоплачена, владение закрыто<br>
+            APP status="mark_fb" - Прилка помечена ФБ, владение закрыто<br>
+            APP status="del_google" - Прилка удалена из GooglePlay, владение закрыто<br>
+            APP status="google_moderate" - Прилка забронирована для Вас, Google модерирует её
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/deeplink.svg">
+                  <div class="main__api-active-form-header-title">Список диплинков выбранного приложения</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для получения списка созданных на приложении диплинков</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID выбранного приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/deeplink-creation.svg">
+                  <div class="main__api-active-form-header-title">Создание диплинка</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для создания диплинка для прилолжения</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Name</div>
+                  <div class="main__api-active-form-input-subtitle">IID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Link</div>
+                  <div class="main__api-active-form-input-subtitle">IID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Confirm_hash</div>
+                  <div class="main__api-active-form-input-subtitle">IID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id<br>
+            status="confirm" - У системы к Вам вопрос, она требует подтверждение. Отправьте тот же самый запрос<br>
+            с confirm_hash-параметром, его значение Вам выслала система
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/push.svg">
+                  <div class="main__api-active-form-header-title">Список Push-рассылок выбранного приложения</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для получения списка созданных на приложении Push-рассылок</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID выбранного приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id<br>
+            PUSH status="wait" - Ждём времени когда нужно отправить Пуш<br>
+            PUSH status="sending" - Идёт отправка пуша...<br>
+            PUSH status="sended" - Пуш успешно отправлен<br>
+            PUSH status="error" - Ошибка отправки пуша
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/push-creation.svg">
+                  <div class="main__api-active-form-header-title">Создание Push-рассылки</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для создания Push-рассылки для прилолжения</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Name</div>
+                  <div class="main__api-active-form-input-subtitle">IID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Title</div>
+                  <div class="main__api-active-form-input-subtitle">Заголовок Push, от 2 до 50 символов</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Image</div>
+                  <div class="main__api-active-form-input-subtitle">Ссылка на изображение для Push</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Timer</div>
+                  <div class="main__api-active-form-input-subtitle">Время когда нужно выполнить рассылку, формат Unix-Timestamp, часовой пояс по-умолчанию +3:00 Moscow</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Channel</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="ALL- всем">
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/push-canceling.svg">
+                  <div class="main__api-active-form-header-title">Архивация / Отмена Push-рассылки</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для архивации рассылки, если рассылка ещё не выполнялась, то она и не будет выполнена, будет отменена</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Hash</div>
+                  <div class="main__api-active-form-input-subtitle">Хеш рассылки</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID выбранного приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/fb.svg">
+                  <div class="main__api-active-form-header-title">Список Рекламных кабинетов Facebook</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для получения списка прикреплённых к прилке рекламных кабинетов Facebook</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID выбранного приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id<br>
+            RK status="wait" - Система добавляет прилку в кабинет<br>
+            RK status="copy" - Система ранее уже привязывала этот РК к приле<br>
+            RK status="added" - РК ФБ привязан к приле<br>
+            RK status="error" - РК ФБ не удалось привязать к приле
+          </div>
+
+          <div class="main__api-active-form">
+            <div class="main__api-active-form-header">
+              <div class="main__api-active-form-header-right">
+                <div class="main__api-active-form-header-right-top">
+                  <img class="main__api-active-form-header-img" src="../img/api-active/fb.svg">
+                  <div class="main__api-active-form-header-title">Шеринг приложения на рекламный кабинет Facebook</div>
+                </div>
+                <div class="main__api-active-form-header-text">Метод для шеринга РК Facebook к приложению</div>
+              </div>
+              
+              <img class="main__api-active-form-header-trigger" src="../img/chevron-light-grey.svg">
+            </div>
+
+            <div class="main__api-active-form-content">
+              <div class="main__api-active-form-left">
+                <div class="main__api-active-form-post">GET  |  POST</div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">apikey</div>
+                  <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
+                  <input class="main__input api-active" type="text">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">User</div>
+                  <div class="main__api-active-form-input-subtitle">ID веба, чтобы показывать нужному вебу только его информацию</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">App ID</div>
+                  <div class="main__api-active-form-input-subtitle">ID выбранного приложения</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+
+                <div class="main__api-active-form-input-container">
+                  <div class="main__api-active-form-input-title">Version</div>
+                  <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
+                  <input class="main__input api-active" type="text" value="1.0">
+                </div>
+                <button class="main__api-active-form-button">Выполнить</button>
+              </div>
+
+              <div class="main__api-active-form-right">
+                <div class="main__api-active-form-right-content">
+                  <span>https://cpastore.ru/</span>
+                  <span class="bold">api.check_token</span>
+                  <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__api-active-description">
+            status="success" - Запрос выполнен успешно<br>
+            status="error" - В запросе есть ошибки, смотрите error_id
+          </div>
+
+          <div class="main__api-active-error-id">
+            <div class="main__api-active-error-id-title">Список error_id: появляется только при статусе = "error"</div>
+            <div class="main__api-active-error-id-content">
+              <div class="main__api-active-error-id-column">
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1001</div>
+                  <div class="main__api-active-error-id-text">
+                    Нет токена
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1002</div>
+                  <div class="main__api-active-error-id-text">
+                    Нет метода
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1003</div>
+                  <div class="main__api-active-error-id-text">
+                    API ключ не существует
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1004</div>
+                  <div class="main__api-active-error-id-text">
+                    Нет доступа к этому методу
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1005</div>
+                  <div class="main__api-active-error-id-text">
+                    Невалидный appid/id приложения
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1006</div>
+                  <div class="main__api-active-error-id-text">
+                    пустое название DeepLink
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1007</div>
+                  <div class="main__api-active-error-id-text">
+                    Короткое название DeepLink
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1008</div>
+                  <div class="main__api-active-error-id-text">
+                    Длинное название DeepLink
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1009</div>
+                  <div class="main__api-active-error-id-text">
+                    Пустая ссылка
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1010</div>
+                  <div class="main__api-active-error-id-text">
+                    Ссылка должна начинаться с http:// https://
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1011</div>
+                  <div class="main__api-active-error-id-text">
+                    Владение приложением завершено, этот 
+                    запрос выполнить нельзя
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1012</div>
+                  <div class="main__api-active-error-id-text">
+                    Не указано название рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1013</div>
+                  <div class="main__api-active-error-id-text">
+                    Не указан заголовок Push
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1014</div>
+                  <div class="main__api-active-error-id-text">
+                    Не указан текст Push
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1015</div>
+                  <div class="main__api-active-error-id-text">
+                    Не указано время отправки Push
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1016</div>
+                  <div class="main__api-active-error-id-text">
+                    Не указано кому отправить Push
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1017</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком короткое название рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1018</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком длинное название рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1019</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком короткий заголовок рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1020</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком длинный заголовок рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1021</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком короткий текст рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1022</div>
+                  <div class="main__api-active-error-id-text">
+                    Слишком длинный текст рассылки
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1023</div>
+                  <div class="main__api-active-error-id-text">
+                    Нельзя выбрать этого получателя, диплинк
+                    с таким хешем несуществует
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__api-active-error-id-column">
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1024</div>
+                  <div class="main__api-active-error-id-text">
+                    Ссылка на картинку Push должна начинаться 
+                    с http:// https://
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1025</div>
+                  <div class="main__api-active-error-id-text">
+                    Ссылка на картинку Push недоступна, она должна выдавать код ответа 200
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1026</div>
+                  <div class="main__api-active-error-id-text">
+                    Картинку не удалось открыть, выберите другую
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1027</div>
+                  <div class="main__api-active-error-id-text">
+                    Картинку должна быть в формате JPEG / PNG
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1028</div>
+                  <div class="main__api-active-error-id-text">
+                    Картинка не должна быть больше 1024px в ширину или высоту. Попробуйте использовать картинку меньше
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1029</div>
+                  <div class="main__api-active-error-id-text">
+                    Картинка не должна быть меньше 256px в ширину или высоту. Попробуйте использовать картинку больше
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1030</div>
+                  <div class="main__api-active-error-id-text">
+                    Нельзя установить задачу на рассылку больше чем через 60 дней
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1031</div>
+                  <div class="main__api-active-error-id-text">
+                    Время отправки пуша уже прошло, минимальный срок отправки пушей – через минуту
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1032</div>
+                  <div class="main__api-active-error-id-text">
+                    В очереди одного приложения по API может быть не больше 50 задач на рассылку! Удалите ненужную задачу или дождитесь отправки одной из задач, чтобы создать новую.
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1033</div>
+                  <div class="main__api-active-error-id-text">
+                    Невалидный хэш пуша
+                  </div>
+                </div>
+                <div class="main__api-active-error-id-row">
+                  <div class="main__api-active-error-id-num">1034</div>
+                  <div class="main__api-active-error-id-text">
+                    Невалидный РКФБ
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__api-active-error-id-column"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__item" href="javascript:">
+        <img class="footer__item-icon" src="../img/footer/buy.svg">
+        <img class="footer__item-icon" src="../img/footer/buy_active.svg">
+        <span class="footer__item-text">Магазин</span>
+      </a>
+      <a class="footer__item" href="javascript:">
+        <img class="footer__item-icon" src="../img/footer/gamepad.svg">
+        <img class="footer__item-icon" src="../img/footer/gamepad_active.svg">
+        <span class="footer__item-text">Приложения</span>
+      </a>
+      <a class="footer__item active" href="javascript:">
+        <img class="footer__item-icon" src="../img/footer/profile.svg">
+        <img class="footer__item-icon" src="../img/footer/profile_active.svg">
+        <span class="footer__item-text">Профиль</span>
+      </a>
+      <a class="footer__item" href="javascript:">
+        <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
+        <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
+        <span class="footer__item-text">Корзина</span>
+      </a>
+    </footer>
+  </div>
+</html>
