@@ -1615,6 +1615,41 @@
 	margin-top: 30px;
 }
 
+.main__app-analytic-table_mobile {
+	display: none;
+	background: rgba(151, 174, 225, 0.11);
+	border-radius: 15px;
+	justify-content: space-between;
+}
+
+.main__app-analytic-table_mobile br {
+	display: none;
+}
+
+.main__app-analytic_mobile-container {
+	flex-basis: 40%;
+}
+
+.main__app-analytic_mobile-container:last-child {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.main__app-analytic_mobile-top {
+	display: flex;
+}
+
+.main__app-analytic_mobile .main__app-analytic-table-column.main__app-analytic-table-column-2 {
+	white-space: nowrap;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 0.06px;
+	color: #5C72A3;
+	opacity: 0.5;
+}
+
 .main__app-analytic-table-header {
 	font-weight: 500;
 	font-size: 13px;
@@ -2000,6 +2035,12 @@
 	width: 64px;
 	position: absolute;
 	left: 6px;
+}
+
+.main__demo-card-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .main__demo-card-text-wrapper {
@@ -3081,6 +3122,10 @@
 	text-shadow: 0px 3px 5px rgba(9, 15, 30, 0.2);
 }
 
+.main__sessions-button_mobile {
+	display: none;
+}
+
 .main__sessions-section {
 	margin-bottom: 50px;
 }
@@ -3091,6 +3136,10 @@
 	padding: 13px 15px 13px 20px;
 	display: flex;
 	align-items: center;
+}
+
+.main__sessions-item span {
+	display: none;
 }
 
 .main__sessions-item:not(:first-child) {
@@ -3105,6 +3154,10 @@
 	opacity: 0.5;
 	margin-top: 3px;
 	margin-bottom: 3px;
+}
+
+.main__sessions-column_online b {
+	display: none;
 }
 
 .main__sessions-text {
@@ -3308,7 +3361,7 @@
 	right: 15px;
 	bottom: 15px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
 	justify-content: flex-end;
 }
 
@@ -3427,7 +3480,7 @@
 	right: 15px;
 	bottom: 15px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
 	justify-content: flex-end;
 }
 
@@ -4508,7 +4561,7 @@ html {
 }
 
 
-@media (min-width: 1024px) and (max-width: 1365px) {
+@media (max-width: 1365px) {
 	.aside {
 		display: none;
 	}
@@ -4523,6 +4576,15 @@ html {
 
 	.main__news-articlent  {
 		margin-top: 50px;
+	}
+
+	.main__app-analytic-table,
+	.main__app-analytic-menu {
+		display: none;
+	}
+
+	.main__app-analytic-table_mobile {
+		display: flex;
 	}
 }
 @media (max-width: 1023px) {
@@ -4544,7 +4606,7 @@ html {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 2;
+		z-index: 20;
 	}
 
 	.navigation__profile-text,
@@ -4689,6 +4751,7 @@ html {
 
 	.main__nav-personal {
 		position: fixed;
+		z-index: 10;
 		top: 50px;
 		background-color: #000;
 		border-radius: 0 0 20px 20px;
@@ -4716,7 +4779,7 @@ html {
 
 	.main__nav-personal::before {
 		background: linear-gradient(270.17deg, #000 25%, rgba(196, 196, 196, 0) 84.91%);
-		top: 0;
+		top: 3px;
 		right: 0;
 		left: auto;
 		z-index: 2;
@@ -4895,10 +4958,6 @@ html {
 		display: none;
 	}
 
-	.aside {
-		display: none;
-	}
-
 	.footer {
 		display: flex;
 	}
@@ -4936,6 +4995,7 @@ html {
 	.main__news-articlent-hashtags {
 		position: relative;
 		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
 
 	.main__bonuses-item {
@@ -5004,5 +5064,185 @@ html {
 		background: none;
 		height: auto;
 		padding: 0;
+	}
+
+	.main__section-item-title.light,
+	.main__section-item-container.fb-info .main__section-item-value{
+		font-size: 9px;
+		line-height: 12px;
+	}
+
+	.main__section-item-price {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.main__section-item.fb-info.green {
+		margin-bottom: 25px;
+	}
+
+	.main__demo-card {
+		flex-wrap: wrap;
+		padding: 15px;
+	}
+
+	.main__demo-card-img {
+		top: 0;
+	}
+
+	.main__demo-card-container {
+		margin-top: 65px;
+	}
+
+	.main__demo-card-text-wrapper,
+	.main__demo-card-button {
+		max-width: 50%;
+		margin: 0;
+	}
+
+	.main__demo-card-button {
+		width: 115px;
+		height: 30px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.main__demo-card-title {
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.main__demo-card-text {
+		font-size: 11px;
+		line-height: 13px;
+	}
+
+	.main__sessions-item {
+		flex-wrap: wrap;
+		align-items: flex-start;
+		padding: 15px;
+		position: relative;
+	}
+
+	.main__sessions-column.column-1 {
+		display: none;
+	}
+
+	.main__sessions-column_online {
+		flex-basis: 100% !important;
+		display: flex;
+	}
+
+	.main__sessions-column-text {
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 13px;
+		color: #5C72A3;
+	}
+
+	.main__sessions-column-title,
+	.main__sessions-column_online .main__sessions-column-text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		color: #000;
+		opacity: 1;
+	}
+
+	.main__sessions-column_country .main__sessions-column-text {
+		color: #000;
+	}
+
+	.main__sessions-column_online b {
+		display: block;
+		margin: auto 4px auto 0;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.main__sessions-column .main__sessions-column-title:not(.main__sessions-column_online .main__sessions-column-title) {
+ 		display: none;
+	}
+
+	.main__sessions-column .main__sessions-column-text {
+		white-space: nowrap;
+	}
+
+	.main__sessions-column .main__sessions-column-text.green {
+		color: #089E4E;
+	}
+
+	.main__sessions-item span {
+		display: block;
+		width: 1px;
+		height: 10px;
+		background: #5C72A3;
+		margin: auto 5px;
+	}
+
+	.main__sessions-column_ip {
+		margin-right: auto;
+	}
+
+	.main__sessions-column.column-last {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
+	.main__sessions-column-button {
+		background: none;
+	}
+
+	.main__sessions-column-button-icon {
+		width: 18px;
+	}
+
+	.kods .main__sessions-column_date .main__sessions-column-title {
+		display: flex !important;
+		color: #5C72A3;
+		position: relative;
+		padding-left: 15px;
+	}
+
+	.kods .main__sessions-column-text.bold {
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: -0.15px;
+	}
+
+	.main__sessions-section.kods .main__sessions-column:not(.column-last):not(.column-1) {
+		flex-basis: 25%;
+		min-width: 85px;
+	}
+
+	.main__sessions-section.kods .main__sessions-column:not(.column-last):not(.column-1).main__sessions-column_date {
+		flex-basis: 55%;
+	}
+
+	.kods .main__sessions-column_date .main__sessions-column-title:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: -20px;
+		bottom: -20px;
+		width: 1px;
+		background: #fff;
+	}
+
+	.kods .main__sessions-button {
+		display: none;
+	}
+
+	.kods .main__sessions-button_mobile {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+		box-shadow: none;
+	}
+
+	.main__sessions-section {
+		margin-bottom: 25px;
 	}
 }
