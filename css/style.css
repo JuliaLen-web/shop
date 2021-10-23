@@ -30,12 +30,13 @@
 
 .main__back-link-mobile {
 	display: none;
-	color: #5c72a3;
 	font-weight: 500;
 	font-size: 13px;
 	line-height: 15px;
 	position: relative;
-	margin-left: 15px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	margin-bottom: 10px;
 }
 
 .main__back-link-mobile:before {
@@ -44,7 +45,7 @@
 	left: 0;
 	width: 7px;
 	height: 14px;
-	background: ;
+	background:  url("../img/arrow-blue.svg") no-repeat center;
 }
 
 .main__auth-content {
@@ -2605,8 +2606,64 @@ html {
 		display: block;
 	}
 
-	.main__path {
+	a.main__back-link-mobile:link,
+	a.main__back-link-mobile:visited,
+	a.main__back-link-mobile:any-link {
+		color: #5c72a3;
+	}
+
+	.main__path,
+	.main__banner.orange {
 		display: none;
+	}
+
+	.main__nav-personal {
+		position: fixed;
+		top: 50px;
+		background-color: #000;
+		border-radius: 0 0 20px 20px;
+		padding: 30px 15px 15px;
+		box-sizing: border-box;
+		margin: 0 -15px;
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	.main__nav-item {
+		white-space: nowrap;
+		color: #fff;
+		border-radius: 30px;
+		transition: all .3s;
+		box-sizing: border-box;
+		padding: 5px 10px;
+		margin-left: 0;
+		margin-right: 10px;
+	}
+
+	.main__nav-item.active::before {
+		content: none
+	}
+
+	.main__nav-personal::before {
+		background: linear-gradient(270.17deg, #000 25%, rgba(196, 196, 196, 0) 84.91%);
+		top: 0;
+		right: 0;
+		left: auto;
+		z-index: 2;
+		height: 105px;
+		width: 80px;
+		position: fixed;
+	}
+
+	.main__nav-item.active {
+		color: #000;
+		background: #fff;
+		background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(107.15deg, #0095FF 0%, #0855C4 100%);
+
+	}
+
+	.main__personal-content {
+		grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
 	}
 
 	.main__applications-header {
