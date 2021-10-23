@@ -2666,6 +2666,12 @@ html {
 		grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
 	}
 
+	.main__nav-personal.shopping-history,
+	.main__nav-personal.my-app {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 	.main__applications-header {
 		flex-wrap: wrap;
 	}
