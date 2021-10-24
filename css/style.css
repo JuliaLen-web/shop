@@ -6141,7 +6141,7 @@ html {
 	.modal-layout {
 		padding: 60px 25px 25px;
 		overflow-y: auto;
-		box-sizing: border-box;box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 	.kods .main__sessions-button_mobile {
