@@ -201,6 +201,638 @@
             </button>
           </div>
         </div>
+
+        <div class="main__app-settings">
+          <div class="main__app-settings-title-wrapper">
+            <img class="main__app-settings-title-img" src="../img/app-settings/app.svg">
+            <div class="main__app-settings-title">Уведомления о бане Google Play</div>
+            <button class="main__app-settings-title-button blue">Настроить</button>
+          </div>
+
+          <div class="main__app-settings-text">
+            По-умолчанию владелец приложения получает уведомление в телеграмм.<br>
+            Если вы хотите, чтобы это уведомление получили и другие участники команды необходимо настроить уведомления.
+          </div>
+
+          <div class="main__app-settings-title-wrapper">
+            <img class="main__app-settings-title-img" src="../img/app-settings/stream.svg">
+            <div class="main__app-settings-title">Потоки</div>
+            <button class="main__app-settings-title-button blue disabled">Создать</button>
+          </div>
+
+          <div class="main__app-settings-form-wrapper"> <!-- класс hidden скрывает main__app-settings-form-wrapper -->
+            <div class="main__app-settings-form stream">
+              <div class="main__app-settings-form-title-wrapper">
+                <div class="main__app-settings-form-title">Создать поток</div>
+                <button class="main__app-settings-form-close">
+                  <img class="main__app-settings-form-close-img" src="../img/close-grey.svg">
+                </button>
+              </div>
+
+              <div class="main__app-settings-form-row first">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Название</div>
+                  <input class="main__input app-settings" type="text" placeholder="input">
+                  <div class="main__app-settings-form-column-description">Виден только вам</div>
+                </div>
+
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Выберите источник</div>
+                  <input class="main__input app-settings" type="text" placeholder="input">
+                </div>
+              </div>
+
+              <div class="main__app-settings-separator"></div>
+
+              <div class="main__app-settings-form-row secondary">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Целевые ссылки</div>
+                  <div class="main__app-settings-inputs" type="text" placeholder="input">
+                    <div class="main__app-settings-form-paths">
+                      <img class="main__app-settings-form-path vert" src="../img/paths/path-vert.svg">
+                      <img class="main__app-settings-form-path gor first" src="../img/paths/path-gor.svg">
+                      <img class="main__app-settings-form-path gor second" src="../img/paths/path-gor.svg">
+                      <img class="main__app-settings-form-path gor third" src="../img/paths/path-gor.svg">
+                      <button class="main__app-settings-form-path-button">
+                        <img class="main__app-settings-form-path-button-icon" src="../img/plus.svg">
+                      </button>
+                    </div>
+                    <div class="main__app-settings-geo-column">
+                      <div class="main__app-settings-geo-container">
+                        <div class="main__app-settings-geo-wrapper">
+                          <div class="main__app-settings-geo">
+                            <span>Весь мир</span>
+                            <img class="main__app-settings-geo-close" src="../img/close-grey.svg">
+                          </div>
+                        </div>
+
+                        <input class="main__input geo-input" type="text" placeholder="input" value="Сmrcoin://goto?deeppass=46172b5a&suber1= ***  &suber2">
+
+                        <div class="main__app-settings-geo-input-buttons">
+                          <button class="main__app-settings-geo-input-button blue">
+                            <img class="main__app-settings-geo-input-button-pause" src="../img/pause.svg">
+                          </button>
+
+                          <button class="main__app-settings-geo-input-button grey">
+                            <img class="main__app-settings-geo-input-button-close" src="../img/close-grey.svg">
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="main__app-settings-geo-container">
+                        <div class="main__app-settings-geo-wrapper">
+                          <div class="main__app-settings-geo">
+                            <span>Algeria</span>
+                            <img class="main__app-settings-geo-close" src="../img/close-grey.svg">
+                          </div>
+                          <div class="main__app-settings-geo">
+                            <span>New Zealand</span>
+                            <img class="main__app-settings-geo-close" src="../img/close-grey.svg">
+                          </div>
+                          <div class="main__app-settings-geo">
+                            <span>Бразилия</span>
+                            <img class="main__app-settings-geo-close" src="../img/close-grey.svg">
+                          </div>
+                          <div class="main__app-settings-geo">
+                            <span>Германия</span>
+                            <img class="main__app-settings-geo-close" src="../img/close-grey.svg">
+                          </div>
+                        </div>
+
+                        <input class="main__input geo-input" type="text" placeholder="Ссылка">
+
+                        <div class="main__app-settings-geo-input-buttons">
+                          <button class="main__app-settings-geo-input-button blue disabled">
+                            <img class="main__app-settings-geo-input-button-pause" src="../img/pause.svg">
+                          </button>
+
+                          <button class="main__app-settings-geo-input-button grey">
+                            <img class="main__app-settings-geo-input-button-close" src="../img/close-grey.svg">
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="main__app-settings-geo-container">
+                        <div class="main__app-settings-geo-wrapper">
+                          <div class="main__app-settings-geo-text">Гео</div>
+                        </div>
+
+                        <input class="main__input geo-input" type="text" placeholder="Ссылка">
+
+                        <div class="main__app-settings-geo-input-buttons">
+                          <button class="main__app-settings-geo-input-button blue disabled">
+                            <img class="main__app-settings-geo-input-button-pause" src="../img/pause.svg">
+                          </button>
+
+                          <button class="main__app-settings-geo-input-button grey">
+                            <img class="main__app-settings-geo-input-button-close" src="../img/close-grey.svg">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main__app-settings-form-buttons">
+                <button class="main__app-settings-form-button grey">Отменить</button>
+                <button class="main__app-settings-form-button blue">Сохранить Deeplink</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-table">
+            <div class="main__app-settings-table-header">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">Название</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links">DeepLinks</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">Установки</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">Последняя</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">Действия</div>
+            </div>
+
+            <div class="main__app-settings-table-line">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
+                <div class="main__app-settings-table-column-deep-link-spans">
+                  <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber2=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber3=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber4=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber5=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                </div>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
+                </button>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
+                26.10.20,<br>
+                17:37
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
+            </div>
+
+            <div class="main__app-settings-table-line">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
+                <div class="main__app-settings-table-column-deep-link-spans">
+                  <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber2=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber3=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber4=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber5=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                </div>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
+                </button>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
+                26.10.20,<br>
+                17:37
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-title-wrapper">
+            <img class="main__app-settings-title-img" src="../img/app-settings/push.svg">
+            <div class="main__app-settings-title">Push-рассылки</div>
+            <button class="main__app-settings-title-button blue disabled">Создать</button>
+          </div>
+
+          <div class="main__notify error app-settings">Рассылки перестали работать 3 дня назад, сообщите администратору</div>
+
+          <div class="main__app-settings-form-wrapper">
+            <div class="main__app-settings-form stream">
+              <div class="main__app-settings-form-title-wrapper">
+                <div class="main__app-settings-form-title">Создание задачи рассылки Push-уведомлений</div>
+                <button class="main__app-settings-form-close">
+                  <img class="main__app-settings-form-close-img" src="../img/close-grey.svg">
+                </button>
+              </div>
+
+              <div class="main__notify warning push">Пуши не придут в те приложения, которые будут, открыты в момент рассылки. Пуши приходят только в закрытые или свернутые приложения!</div>
+
+              <div class="main__app-settings-form-row push-row-1">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Название задачи</div>
+                  <textarea class="main__input app-settings big" rows="14" cols="10" wrap="soft" placeholder="input"></textarea>
+                  <div class="main__app-settings-form-column-description">Видно только вам</div>
+                </div>
+
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Заголовок</div>
+                  <textarea class="main__input app-settings big" rows="14" cols="10" wrap="soft" placeholder="Вот так выглядит текст, который имеет 50 символов."></textarea>
+                  <div class="main__app-settings-form-column-description">Максимум 50 символов</div>
+                </div>
+
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Текст</div>
+                  <textarea class="main__input app-settings big" rows="14" cols="10" wrap="soft" placeholder="Это пример того, как выглядит объем текста, который имеет всего 100 символов, и состоит из ~18 слов."></textarea>
+                  <div class="main__app-settings-form-column-description">Максимум 100 символов</div>
+                </div>
+              </div>
+
+              <div class="main__app-settings-form-row push-row-2">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Изображение</div>
+                  <button class="main__app-settings-form-column-button">Выбрать фото</button>
+                  <div class="main__app-settings-form-column-description">Только *.png формат</div>
+                </div>
+
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title volume">Звук</div>
+                  <div class="main__app-settings-form-column-dropdown-wrapper">
+                    <input class="main__input app-settings" type="text" placeholder="input">
+                    <button class="main__app-settings-form-column-dropdown-button">
+                      <img class="main__app-settings-form-column-dropdown-button-img" src="../img/volume-grey.svg">
+                    </button>
+                  </div>
+                  <div class="main__app-settings-form-column-description">Работает не на всех устройствах</div>
+                </div>
+
+                <div class="main__app-settings-form-column"></div>
+              </div>
+
+              <div class="main__app-settings-separator"></div>
+
+              <div class="main__app-settings-form-row push-row-2">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Доставлять в запущеное приложение?</div>
+                  <input class="main__input app-settings" type="text" placeholder="input">
+                  <div class="main__app-settings-form-column-description">Работает не на всех устройствах</div>
+                </div>
+
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Получатели</div>
+                  <input class="main__input app-settings" type="text" placeholder="input">
+                </div>
+
+                <div class="main__app-settings-form-column"></div>
+              </div>
+
+              <div class="main__app-settings-separator"></div>
+
+              <div class="main__app-settings-form-row push-row-2">
+                <div class="main__app-settings-form-column">
+                  <div class="main__app-settings-form-column-title">Тип задачи</div>
+                  <input class="main__input app-settings" type="text" placeholder="input">
+                </div>
+
+                <div class="main__app-settings-form-column flex-2">
+                  <div class="main__app-settings-form-column-title">Дата и время отправления Push-уведомления</div>
+                  <div class="main__app-settings-form-column-date-wrapper">
+                    <div class="main__app-settings-form-column-date-container">
+                      <input class="main__input app-settings" type="date">
+                      <input class="main__input app-settings time" type="number" placeholder="14">
+                      <input class="main__input app-settings time" type="number" placeholder="39">
+                    </div>
+                    <div class="main__app-settings-form-column-date-description">Если дата отправки сегодня – не заполняйте поле даты, укажите только время</div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="main__app-settings-form-buttons push">
+                <button class="main__app-settings-form-button grey">Отменить</button>
+                <button class="main__app-settings-form-button blue">Создать задачу</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-table">
+            <div class="main__app-settings-table-header">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Название</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 push">Название</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 push">Push-уведомление</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 push">Клики</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 push">Статус</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-6 push">Действия</div>
+            </div>
+
+            <div class="main__app-settings-table-line">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
+                26.10.20,<br>
+                17:00:37
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
+                <div>
+                  <span class="bold">I make 1050$ per day!</span><br>
+                  No need to study anything! The robot will earn.
+                </div>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
+                <span class="red">
+                  ⛔️ Ошибка отправки, <br>
+                  создайте задачу заново
+                </span>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
+            </div>
+
+            <div class="main__app-settings-table-line">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
+                26.10.20,<br>
+                17:00:37
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
+                <div>
+                  <span class="bold">I make 1050$ per day!</span><br>
+                  No need to study anything! The robot will earn.<br>
+                  Изображение: <span class="blue">Смотреть</span>
+                </div>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
+                <span class="red">
+                  ⛔️ Ошибка отправки, <br>
+                  создайте задачу заново
+                </span>
+              </div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-title-wrapper">
+            <img class="main__app-settings-title-img" src="../img/app-settings/fb.svg">
+            <div class="main__app-settings-title">Оптимизация FB на депозиты / регистрации</div>
+            <button class="main__app-settings-title-button grey">Как настроить?</button>
+            <button class="main__app-settings-title-button blue">Настроить прием событий</button>
+          </div>
+
+          <div class="main__app-settings-table">
+            <div class="main__app-settings-table-header">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 fb">Дата</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 fb">Количество</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 fb">Последний раз</div>
+            </div>
+
+            <div class="main__app-settings-table-line fb">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 fb">Регистрация</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 fb">45</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 fb">31.06.2020, 15:22</div>
+            </div>
+
+            <div class="main__app-settings-table-line fb">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 fb">Депозит</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 fb">2345</div>
+
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 fb">31.06.2020, 15:22</div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-title-wrapper">
+            <img class="main__app-settings-title-img" src="../img/app-settings/sharing.svg">
+            <div class="main__app-settings-title">Шаринг приложения к рекламному кабинету</div>
+            <button class="main__app-settings-title-button blue ">Добавить рекламный кабинет(ы)</button>
+          </div>
+
+          <div class="main__notify error sharing">Бот перестал работать 3 дня назад, сообщите администратору</div>
+
+          <div class="main__app-settings-sharing-wrapper">
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+
+            <div class="main__app-settings-sharing-item">
+              <div>299859284436268</div>
+              <img class="main__app-settings-sharing-img" src="../img/verified.svg">
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
