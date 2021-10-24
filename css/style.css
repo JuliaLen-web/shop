@@ -1439,6 +1439,23 @@
 	margin-right: auto;
 }
 
+.navigation__separate {
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	height: 15px;
+	width: 1px;
+	box-sizing: border-box;
+	margin: auto 15px;
+	display: none;
+	order: 4;
+}
+
+.navigation__burger {
+	display: none;
+	order: 5;
+	margin: auto 0;
+	cursor: pointer;
+}
+
 .main__notify.app-settings {
 	margin: 30px 0 20px;
 }
@@ -4762,6 +4779,14 @@ html {
 	.navigation__license,
 	.navigation__balance-button {
 		display: none;
+	}
+
+	.navigation__separate {
+		display: block;
+	}
+
+	.navigation__burger {
+		display: flex;
 	}
 
 	.navigation__logo-container:before {
