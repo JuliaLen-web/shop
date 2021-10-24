@@ -4863,6 +4863,20 @@
 	margin-top: 6px;
 }
 
+.modal-input-button-ok.auth-2 {
+	display: block;
+}
+
+.modal-input-button-text.auth-2 {
+	display: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
 .modal-bonus-img {
 	height: 89px;
 	margin-top: -8px;
@@ -5175,6 +5189,7 @@ html {
 *.scrollbar-hide::-webkit-scrollbar {
 	display: none;
 }
+
 @media (max-width: 1365px) {
 	.aside {
 		display: none;
@@ -6124,7 +6139,9 @@ html {
 	}
 
 	.modal-layout {
-		padding: 25px;
+		padding: 60px 25px 25px;
+		overflow-y: auto;
+		box-sizing: border-box;box-sizing: border-box;
 	}
 
 	.kods .main__sessions-button_mobile {
@@ -6247,5 +6264,144 @@ html {
 	.main__shopping-history-item-container .main__shopping-history-column-price {
 		background: none;
 		font-weight: bold;
+	}
+
+	.modal,
+	.modal.xl {
+		max-width: 375px;
+	}
+
+	.modal-header {
+		padding: 20px 20px 0 20px;
+	}
+
+	.modal-title.not-authorized {
+		display: none;
+	}
+
+	.modal-title.not-authorized.mobile {
+		display: block;
+		font-family: SF Pro Display;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		color: #090F1E;
+		width: 100%;
+		margin-left: 20px;
+	}
+
+	.modal-content {
+		padding: 0 20px 20px 20px;
+	}
+
+	.modal-content.not-authorized {
+		margin-top: 0;
+	}
+
+	.modal-not-authorized-telegram-wrapper {
+		padding: 25px 20px 20px;
+	}
+
+	.modal-not-authorized-telegram-icon {
+		width: 60px;
+	}
+
+	.modal-not-authorized-telegram-button {
+		margin-top: 18px;
+		padding: 0 30px;
+		border-radius: 10px;
+		width: 100%;
+		box-shadow: 0px 4px 11px rgba(9, 15, 30, 0.2);
+	}
+
+	.modal-content-text.not-authorized.desktop {
+		display: none;
+	}
+
+	.modal-content-text.not-authorized.mobile {
+		display: block;
+		margin: 10px auto 0;
+		max-width: 300px;
+	}
+
+	.modal-close-button {
+		width: 20px;
+		height: 20px;
+		background: transparent;
+	}
+
+	.modal-close-button-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.modal-content.auth {
+		margin-top: 10px;
+	}
+
+	.modal-title.auth {
+		font-family: SF Pro Display;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		color: #090F1E;
+		width: 100%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	.modal-content-text.auth {
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #090F1E;
+		width: 100%;
+		text-align: center;
+	}
+	.modal-content-text.light-grey.auth {
+		font-weight: 500;
+		font-size: 9px;
+		line-height: 11px;
+		color: #090F1E;
+		opacity: 0.3;
+		margin-top: 10px;
+	}
+	.modal-auth-2-img {
+		margin-top: 20px;
+	}
+	.modal-title.auth-2 {
+		font-family: SF Pro Display;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		color: #090F1E;
+		max-width: 290px;
+		margin: 25px auto 0;
+	}
+	.modal-content-text.auth-2 {
+		margin-top: 16px;
+	}
+	.modal-input-container.auth-2 {
+		margin-top: 80px;
+		flex-direction: column;
+	}
+	.modal-input-button-ok.auth-2 {
+		display: none;
+	}
+	.modal-input-button-text.auth-2 {
+		display: block;
+	}
+	.modal-input-button.auth-2 {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.modal-input.auth-2 {
+		height: 40px;
+		border: none;
+		background: rgba(148, 166, 205, 0.2);
+		border-radius: 10px;
 	}
 }
