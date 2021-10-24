@@ -634,6 +634,7 @@ const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
 const closeBonus = document.querySelector('.modal-layout-bonus .modal-close');
 
 const triggerKey = document.getElementsByClassName('modal-trigger-key')[0];
+const triggerKeyMobile = document.getElementsByClassName('modal-trigger-key_mobile')[0];
 const layoutKey = document.getElementsByClassName('modal-layout-key')[0];
 const closeKey = document.querySelector('.modal-layout-key .modal-close');
 
@@ -669,9 +670,9 @@ const modals = {
        }),
     } : {},
 
-    ...triggerKey && layoutKey && closeKey ? {
+    ...triggerKey && layoutKey && closeKey && triggerKeyMobile ? {
         bonus: new Modal({
-            triggers: [triggerKey],
+            triggers: [triggerKey, triggerKeyMobile],
             layout: layoutKey,
             closeTriggers: [closeKey],
        }),

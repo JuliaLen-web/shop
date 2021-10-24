@@ -5151,6 +5151,22 @@ html {
 	::-webkit-scrollbar {
 		width: 0;
 	}
+
+	.main__auth-content {
+		flex: 1;
+		min-height: auto;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.main__auth-title {
+		margin-top: 170px;
+	}
+
+	.navigation__button-telegram {
+		max-width: 200px;
+		margin-left: auto;
+	}
 }
 
 @media (max-width: 675px) {
@@ -5538,6 +5554,55 @@ html {
 		background: none;
 		font-weight: bold;
 	}
+
+	.main__auth-title {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.main__auth-subtitle {
+		font-size: 20px;
+		line-height: 22px;
+		margin-top: 15px;
+		width: auto;
+	}
+
+	.main__auth-button {
+		width: 200px;
+		font-size: 16px;
+		line-height: 18px;
+		margin-top: 15px;
+		min-height: 40px;
+	}
+
+	.main__auth-advantage-wrapper {
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+		margin-top: 10px;
+		margin-bottom: 170px;
+	}
+	
+	.main__auth-advantage {
+		margin-left: 0;
+		margin-top: 15px;
+		max-width: 360px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+	.main__auth-advantage:not(:first-child) {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.navigation__logo {
+		height: 25px;
+	}
+
+	.modal-layout {
+		padding: 25px;
+	}
 }
 
 .burger-layout {
@@ -5600,6 +5665,7 @@ html {
     justify-content: center;
     align-items: center;
     transition: opacity .3s ease;
+	box-sizing: border-box;
 }
 
 .modal-layout.opened {
@@ -5895,6 +5961,7 @@ html {
 	line-height: 22px;
 	letter-spacing: -0.2px;
 	color: #000000;
+	white-space: nowrap;
 }
 
 .modal-key-date {
