@@ -9,6 +9,73 @@
    </style>
  </head>
  <body>
+ <div class="burger-layout">
+   <div class="burger">
+     <div class="burger-content">
+       <div class="burger-content-profile">
+         <div class="navigation__profile">
+           <img class="navigation__profile-img" src="../img/profile.png">
+           <div class="navigation__profile-text">
+             <div class="navigation__profile-email">@john4</div>
+             <div class="navigation__profile-name">John Doe</div>
+           </div>
+         </div>
+         <div class="navigation__balance top">
+           <div class="navigation__balance-text">
+             <div class="navigation__balance-title">Баланс</div>
+             <div class="navigation__balance-subtitle">$ 229.92</div>
+           </div>
+           <button class="navigation__balance-button">
+             <img class="navigation__balance-button-icon" src="../img/plus.svg">
+           </button>
+         </div>
+       </div>
+       <div class="navigation__list">
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/basket.svg">
+           <div class="navigation__item-text">Корзина</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
+           <div class="navigation__item-text">Магазин</div>
+         </div>
+         <div class="navigation__item active">
+           <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
+           <div class="navigation__item-text">Приложения</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
+           <div class="navigation__item-text">API</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
+           <div class="navigation__item-text">Личный кабинет</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/edit-square.svg">
+           <div class="navigation__item-text">Лента</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/chat.svg">
+           <div class="navigation__item-text">Контакты</div>
+         </div>
+         <div class="navigation__item">
+           <img class="navigation__item-icon" src="../img/icon-nav/star.svg">
+           <div class="navigation__item-text">Бонусы</div>
+         </div>
+       </div>
+       <div class="navigation__license">
+         <div class="navigation__license-text">
+           <div>Все права защинены</div>
+           <div>2021 © 1win Shop</div>
+         </div>
+         <div class="navigation__license-lang">
+           <img class="navigation__license-lang-img" src="../img/ru.svg">
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
   <div class="root">
     <nav class="navigation">
       <div class="navigation__logo-container">
@@ -83,7 +150,7 @@
         </div>
       </div>
       <span class="navigation__separate"></span>
-      <div class="navigation__burger">
+      <div class="navigation__burger burger-trigger">
         <img class="navigation__profile-img" src="../img/burger.svg">
       </div>
     </nav>
@@ -534,4 +601,6 @@
       </a>
     </footer>
   </div>
+  <script src="../js/index.js"></script>
+ </body>
 </html>
