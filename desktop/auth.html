@@ -9,10 +9,68 @@
    </style>
  </head>
  <body>
+  <div class="modal-layout modal-layout-not-authorized">
+    <div class="modal xl">
+      <div class="modal-header top ">
+        <div class="modal-title center not-authorized">
+          Авторизуйтесь, чтобы  получить полный<br>
+          доступ к 1win Shop
+        </div>
+
+        <button class="modal-close modal-close-button">
+          <img class="modal-close-icon" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-content not-authorized">
+        <div class="modal-content-text grey center">
+          Всё для арбитража трафика. Аренда приложений <br>
+          под Gambling / Betting / Dating в одни руки, а также <br>
+          возможность их выкупить. Покупка FB аккаунтов <br>
+          и Бизнес Менеджеров с верификацией.
+        </div>
+        <div class="modal-not-authorized-telegram-wrapper">
+          <img class="modal-not-authorized-telegram-icon" src="../img/telegram.svg">
+
+          <button class="modal-not-authorized-telegram-button modal-trigger-auth modal-open-auth">Войти через Telegram</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-layout modal-layout-auth">
+    <div class="modal">
+      <div class="modal-header top ">
+        <div class="modal-title">Авторизация</div>
+
+        <button class="modal-close modal-close-button">
+          <img class="modal-close-icon" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-content auth">
+        <div class="modal-content-text">
+          Для входа или регистрации отправьте <br>
+          команду Telegram-боту <span class="blue">@cpastore_bot</span>
+        </div>
+
+        <button class="modal-auth-button modal-trigger-auth-2 modal-open-auth-2">Bойти</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="burger-layout">
+    <div class="burger">
+      <div class="burger-content">
+        бургер
+      </div>
+    </div>
+  </div>
+
   <div class="root">
     <nav class="navigation">
       <img class="navigation__logo" src="../img/logo.svg">
-      <button class="navigation__button-telegram">
+      <button class="navigation__button-telegram modal-trigger modal-trigger-auth-main">
         <div class="navigation__button-telegram_text">
           <div class="navigation__button-telegram_title">Войти через</div>
           <div class="navigation__button-telegram_subtitle">Telegram</div>
@@ -33,7 +91,6 @@
           <div>Все права защинены</div>
           <div>2021 © 1win Shop</div>
         </div>
-
         <div class="navigation__license-lang blue">
           <img class="navigation__license-lang-img" src="../img/ru.svg">
         </div>
@@ -44,7 +101,8 @@
         <img class="main__auth-bg" src="../img/auth-bg.png">
         <div class="main__auth-title">1win.Shop</div>
         <div class="main__auth-subtitle">Лучшие инструменты для запуска трафика уже здесь</div>
-        <button class="main__auth-button">Перейти в магазин</button>
+        <div class="main__auth-subtitle burger-trigger">Trigger</div>
+        <button class="main__auth-button modal-trigger modal-trigger-not-authorized">Перейти в магазин</button>
         <div class="main__auth-advantage-wrapper">
             <div class="main__auth-advantage">
                 <img class="main__auth-advantage-img" src="../img/gamepad.png">
@@ -73,4 +131,7 @@
       </div>
     </main>
   </div>
+
+  <script src="../js/index.js"></script>
+</body>
 </html>
