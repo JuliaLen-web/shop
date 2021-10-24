@@ -399,6 +399,10 @@
 	margin-bottom: 6px;
 }
 
+.main__section-item-icons .main__section-item-value {
+	display: none;
+}
+
 .main__section-item-icon {
 	width: 24px;
 	height: 24px;
@@ -643,8 +647,11 @@
 }
 
 .main__app-header-img {
+	min-width: 150px;
 	width: 150px;
 	height: 150px;
+	border-radius: 30px;
+	overflow: hidden;
 }
 
 .main__app-header-section-1 {
@@ -5288,6 +5295,22 @@ html {
 		color: #5C72A3;
 		opacity: 0.5;
 	}
+
+	.main__app-header-img {
+		display: none;
+	}
+
+	.main__app-header-columns {
+		flex-wrap: wrap;
+	}
+
+	.main__app-header-section-1 {
+		flex-basis: 24%;
+	}
+
+	.main__app-header-section-separator {
+		margin: auto 20px 18px 0;
+	}
 }
 @media (max-width: 1023px) {
 	.root {
@@ -5431,7 +5454,7 @@ html {
 	}
 
 	.main__section-item-container {
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	.main__section-item-left .main__section-item-container.fb-info:not(:last-child) {
@@ -5537,6 +5560,7 @@ html {
 	.main__applications-header-dropdown.type,
 	.main__applications-header-dropdown.filter {
 		margin-left: 0;
+		margin-bottom: 10px;
 	}
 
 	.main__section-item {
@@ -5551,6 +5575,8 @@ html {
 
 	.main__section-item-container.name {
 		margin-left: 10px;
+		padding: 5px 0;
+		box-sizing: border-box;
 	}
 
 	.main__section-item-title.bold {
@@ -5599,19 +5625,24 @@ html {
 	}
 
 	.main__app-header-img {
+		display: block;
 		position: relative;
 		width: 100%;
+		height: auto;
 		padding-bottom: 36.2%;
 		flex-shrink: 0;
+		border-radius: 10px 10px 0 0;
 	}
 
 	.main__app-header-img img {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		object-fit: cover;
 		object-position: top;
-		border-radius: 10px 10px 0 0;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: auto;
+		max-height: 100%;
 	}
 
 	.main__app-header-section-separator {
@@ -5708,6 +5739,25 @@ html {
 	.navigation__button-telegram {
 		max-width: 200px;
 		margin-left: auto;
+	}
+
+	.main__section-item-icons .main__section-item-value {
+		display: block;
+		margin-bottom: 0;
+		padding: 5px 8px;
+		font-size: 9px;
+		line-height: 12px;
+		letter-spacing: 0.171px;
+	}
+
+	.main__section-item-icons {
+		margin-bottom: 0;
+	}
+
+	.main__section-item-icons .main__section-item-icon {
+		min-width: 15px;
+		width: 15px;
+		height: 15px;
 	}
 }
 
