@@ -5485,7 +5485,7 @@ html {
 }
 
 .modal {
-    min-width: 400px;
+    width: 400px;
     min-height: 150px;
     background-color: #fff;
     border-radius: 16px;
@@ -5506,8 +5506,18 @@ html {
 	box-sizing: border-box;
 }
 
+.modal-header.auth-2 {
+	position: relative;
+    align-items: flex-start;
+	justify-content: center;
+}
+
 .modal-header.top {
     align-items: flex-start;
+}
+
+.modal-auth-2-img {
+	height: 69px;
 }
 
 .modal-title {
@@ -5528,8 +5538,11 @@ html {
 	margin-left: 48px;
 }
 
+.modal-title.auth-2 {
+	margin-top: 20px;
+}
+
 .modal-close {
-    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -5576,6 +5589,28 @@ html {
 
 .modal-content-text.grey {
 	color: rgba(9, 15, 30, 0.8);
+}
+
+.modal-content-text.auth-2 {
+	margin-top: 12px;
+}
+
+.modal-content-title.bonus {
+	margin-top: 12px;
+}
+.modal-content-text.bonus {
+	margin-top: 12px;
+}
+
+.light-grey {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	opacity: 0.4;
+}
+
+.light-grey.auth {
+	margin-top: 15px;
 }
 
 .modal-content-text.center {
@@ -5630,4 +5665,52 @@ html {
 	color: #FFFFFF;
 	text-shadow: 0px 3px 5px rgba(9, 15, 30, 0.2);
 	margin-top: 30px;
+}
+
+.modal-input-container {
+	width: 100%;
+	display: flex;
+}
+
+.modal-input-container.auth-2 {
+	margin-top: 30px;
+}
+
+.modal-input-container.bonus {
+	margin-top: 30px;
+}
+
+.modal-input {
+	flex: auto;
+	background: #FFFFFF;
+	border: 1px solid rgba(92, 114, 163, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 0 15px;
+}
+
+.modal-input-button {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+}
+
+.modal-input-button.blue {
+	background: linear-gradient(107.15deg, #0095FF 0%, #0855C4 100%);
+	box-shadow: 0px 6px 22px rgba(238, 238, 238, 0.3);
+	margin-left: 10px;
+}
+
+.modal-input-button-ok {
+	width: 25px;
+    margin-top: 6px;
+}
+
+.modal-bonus-img {
+	height: 89px;
+	margin-top: -8px;
+	margin-left: 81px;
 }

@@ -624,10 +624,10 @@ const triggerAuth = document.getElementsByClassName('modal-trigger-auth')[0];
 const triggerAuthMain = document.getElementsByClassName('modal-trigger-auth-main')[0];
 const layoutAuth = document.getElementsByClassName('modal-layout-auth')[0];
 const closeAuth = document.querySelector('.modal-layout-auth .modal-close');
+const openAuth2 = document.querySelector('.modal-layout-auth .modal-open-auth-2');
 
 const triggerAuth2 = document.getElementsByClassName('modal-trigger-auth-2')[0];
 const layoutAuth2 = document.getElementsByClassName('modal-layout-auth-2')[0];
-const closeAuth2 = document.querySelector('.modal-layout-auth-2 .modal-close');
 
 const triggerBonus = document.getElementsByClassName('modal-trigger-bonus')[0];
 const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
@@ -635,30 +635,36 @@ const closeBonus = document.querySelector('.modal-layout-bonus .modal-close');
 
 const modals = {
     ...triggerNotAuthorized && layoutNotAuthorized && closeNotAuthorized && openAuth ? {
-     notAuthorized: new Modal({
+        notAuthorized: new Modal({
             triggers: [triggerNotAuthorized],
             layout: layoutNotAuthorized,
             closeTriggers: [closeNotAuthorized, openAuth],
         }),
     } : {},
-    ...triggerAuth && triggerAuthMain && layoutAuth && closeAuth ? {
-     auth: new Modal({
+
+    ...triggerAuth && triggerAuthMain && layoutAuth && closeAuth && openAuth2 ? {
+        auth: new Modal({
             triggers: [triggerAuth, triggerAuthMain],
             layout: layoutAuth,
-            closeTriggers: [closeAuth],
+            closeTriggers: [closeAuth, openAuth2],
         }),
     } : {},
-       // auth2: new Modal({
-       //     triggers: [triggerAuth2],
-       //     layout: layoutAuth2,
-       //     closeTriggers: [closeAuth2],
-       // }),
-       // bonus: new Modal({
-       //     triggers: [triggerBonus],
-       //     layout: layoutBonus,
-       //     closeTriggers: [closeBonus],
-       // }),
-   };
+
+    ...triggerAuth2 && layoutAuth2 ? {
+        auth2: new Modal({
+            triggers: [triggerAuth2],
+            layout: layoutAuth2,
+       }),
+    } : {},
+
+    ...triggerBonus && layoutBonus && closeBonus ? {
+        bonus: new Modal({
+            triggers: [triggerBonus],
+            layout: layoutBonus,
+            closeTriggers: [closeBonus],
+       }),
+    } : {},
+};
 
 Object.values(modals).forEach(modal => {modal.listen();});
 

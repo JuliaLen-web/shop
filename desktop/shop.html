@@ -9,6 +9,32 @@
    </style>
  </head>
  <body>
+  <div class="modal-layout modal-layout-bonus">
+    <div class="modal">
+      <div class="modal-header">
+        <img class="modal-bonus-img" src="../img/bonus-modal-value.png">
+
+        <button class="modal-close modal-close-button">
+          <img class="modal-close-icon" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-title center bonus">-10% на первую покупку</div>
+        <div class="modal-content-text center bonus">
+          вводи почту и получи скидку на <br>
+          свою первую покупку!
+        </div>
+        <div class="modal-input-container bonus">
+          <input class="modal-input" type="text" placeholder="1winuser@gmail.com">
+          <button class="modal-input-button blue">
+            <img class="modal-input-button-ok" src="../img/ok-white.svg">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="root">
     <nav class="navigation">
       <div class="navigation__logo-container">
@@ -100,7 +126,7 @@
         </div>
 
         <div class="main__card-light-list">
-          <div class="main__card-light blue">
+          <div class="main__card-light blue modal-trigger modal-trigger-bonus">
             <div>Betting</div>
             <img class="main__card-light-img" src="../img/card-light/ball.png">
           </div>
@@ -668,4 +694,7 @@
       </a>
     </footer>
   </div>
+
+  <script src="../js/index.js"></script>
+</body>
 </html>
