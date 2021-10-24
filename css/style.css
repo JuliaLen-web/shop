@@ -6107,6 +6107,7 @@ html {
 		line-height: 22px;
 		margin-top: 15px;
 		width: auto;
+		max-width: 300px;
 	}
 
 	.main__auth-button {
