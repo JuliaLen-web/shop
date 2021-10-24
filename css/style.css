@@ -1702,7 +1702,6 @@
 	color: #5C72A3;
 }
 
-
 .main__app-analytic-table-header {
 	font-weight: 500;
 	font-size: 13px;
@@ -1881,6 +1880,10 @@
 	padding-bottom: 15px;
 }
 
+.main__api-active-form-header-container button {
+	display: none;
+}
+
 .main__api-active-form-header-right-top,
 .main__api-active-form-header {
 	display: flex;
@@ -1890,6 +1893,11 @@
 .main__api-active-form-header-img {
 	width: 30px;
 	margin-right: 10px;
+	display: block;
+}
+
+.main__api-active-form-header-img.off {
+	display: none;
 }
 
 .main__api-active-form-header-title {
@@ -4706,6 +4714,12 @@ html {
 		box-sizing: border-box;
 	}
 
+	.main__app-header-name {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.33px;
+	}
+
 	.main__content_menu {
 		padding-top: 150px;
 	}
@@ -5018,6 +5032,10 @@ html {
 		display: none;
 	}
 
+	.main__app-header-name.analytic {
+		margin-top: 0;
+	}
+
 	.footer {
 		display: flex;
 	}
@@ -5321,5 +5339,75 @@ html {
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
+	}
+
+	.main__api-active-form {
+		margin-bottom: 10px;
+	}
+
+	.main__api-active-title,
+	.main__api-active-form-content,
+	.main__api-active-description {
+		display: none;
+	}
+
+	.main__api-active-form-header {
+		border: none;
+		position: relative;
+	}
+
+	.main__api-active-form-header-img {
+		display: none;
+	}
+
+	.main__api-active-form.open .main__api-active-form-header-img {
+		display: block;
+	}
+
+	.main__api-active-form.open .main__api-active-form-header-img.off {
+		display: none;
+	}
+
+	.main__api-active-form .main__api-active-form-header-img.off {
+		display: block;
+	}
+
+	.main__api-active-form-header-trigger {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.main__api-active-form-header-container {
+		display: none;
+		flex-direction: column;
+	}
+
+	.main__api-active-form.open .main__api-active-form-header-container {
+		display: flex;
+	}
+
+	.main__api-active-form-header-container button {
+		display: flex;
+	}
+
+	.main__api-active-error-id {
+		padding: 15px;
+		background: #F2F5FB;
+		border-radius: 12px;
+	}
+
+	.main__api-active-error-id-content {
+		display: none;
+		opacity: 0;
+		transition: opacity .3s;
+	}
+
+	.main__api-active-error-id.active .main__api-active-error-id-content {
+		display: flex;
+	}
+
+	.main__api-active-error-id.animation .main__api-active-error-id-content {
+		opacity: 1;
 	}
 }
