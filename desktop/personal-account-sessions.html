@@ -9,6 +9,28 @@
    </style>
  </head>
  <body>
+  <div class="modal-layout modal-layout-key">
+    <div class="modal">
+      <div class="modal-header center">
+        <img class="modal-key-img" src="../img/lock-modal.png">
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-title center key">Готово!</div>
+        <div class="modal-content-text center key">
+          Новый код для входа успешно <br>
+          создан
+          <div class="modal-content-key">
+            <div class="modal-key">6216-c407</div>
+            <div class="modal-key-date">Действует до 26.02.20</div>
+          </div>
+        </div>
+
+        <button class="modal-key-button modal-close">Продолжить</button>
+      </div>
+    </div>
+  </div>
+
   <div class="root">
     <nav class="navigation">
       <div class="navigation__logo-container">
@@ -178,7 +200,7 @@
           <div class="main__sessions-section kods">
             <div class="main__sessions-title-s-wrapper">
               <div class="main__sessions-title-s">Коды</div>
-              <button class="main__sessions-button">Создать код</button>
+              <button class="main__sessions-button modal-trigger-key">Создать код</button>
             </div>
 
             <div class="main__sessions-item">
@@ -252,4 +274,7 @@
       </a>
     </footer>
   </div>
+
+  <script src="../js/index.js"></script>
+</body>
 </html>

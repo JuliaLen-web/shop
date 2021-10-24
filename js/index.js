@@ -633,6 +633,10 @@ const triggerBonus = document.getElementsByClassName('modal-trigger-bonus')[0];
 const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
 const closeBonus = document.querySelector('.modal-layout-bonus .modal-close');
 
+const triggerKey = document.getElementsByClassName('modal-trigger-key')[0];
+const layoutKey = document.getElementsByClassName('modal-layout-key')[0];
+const closeKey = document.querySelector('.modal-layout-key .modal-close');
+
 const modals = {
     ...triggerNotAuthorized && layoutNotAuthorized && closeNotAuthorized && openAuth ? {
         notAuthorized: new Modal({
@@ -662,6 +666,14 @@ const modals = {
             triggers: [triggerBonus],
             layout: layoutBonus,
             closeTriggers: [closeBonus],
+       }),
+    } : {},
+
+    ...triggerKey && layoutKey && closeKey ? {
+        bonus: new Modal({
+            triggers: [triggerKey],
+            layout: layoutKey,
+            closeTriggers: [closeKey],
        }),
     } : {},
 };
