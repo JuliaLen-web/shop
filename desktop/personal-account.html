@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>1win shop</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
-   <style>
-    @import url("../css/style.css");
-   </style>
- </head>
- <body>
-  <div class="root">
-    <nav class="navigation">
-      <div class="navigation__logo-container">
-        <img class="navigation__logo small" src="../img/logo.svg">
-      </div>
-      <div class="navigation__profile">
-        <img class="navigation__profile-img" src="../img/profile.png">
-        <div class="navigation__profile-text">
-          <div class="navigation__profile-email">@john4</div>
-          <div class="navigation__profile-name">John Doe</div>
+<head>
+  <title>1win shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+  <style>
+      @import url("../css/style.css");
+  </style>
+</head>
+<body>
+<div class="burger-layout">
+  <div class="burger">
+    <div class="burger-content">
+      <div class="burger-content-profile">
+        <a class="navigation__profile" href="javascript:">
+          <img class="navigation__profile-img" src="../img/profile.png">
+          <div class="navigation__profile-text">
+            <div class="navigation__profile-email">@john4</div>
+            <div class="navigation__profile-name">John Doe</div>
+          </div>
+        </a>
+        <div class="navigation__balance top">
+          <div class="navigation__balance-text">
+            <div class="navigation__balance-title">Баланс</div>
+            <div class="navigation__balance-subtitle">229.92$</div>
+          </div>
+          <button class="navigation__balance-button">
+            <img class="navigation__balance-button-icon" src="../img/plus.svg">
+          </button>
         </div>
       </div>
       <div class="navigation__list">
@@ -30,7 +40,7 @@
           <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
           <div class="navigation__item-text">Магазин</div>
         </div>
-        <div class="navigation__item">
+        <div class="navigation__item active">
           <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
           <div class="navigation__item-text">Приложения</div>
         </div>
@@ -38,7 +48,7 @@
           <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
           <div class="navigation__item-text">API</div>
         </div>
-        <div class="navigation__item active">
+        <div class="navigation__item">
           <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
           <div class="navigation__item-text">Личный кабинет</div>
         </div>
@@ -55,110 +65,171 @@
           <div class="navigation__item-text">Бонусы</div>
         </div>
       </div>
-      <div class="navigation__balance top">
-        <div class="navigation__balance-text">
-          <div class="navigation__balance-title">Баланс</div>
-          <div class="navigation__balance-subtitle">$ 229.92</div>
-        </div>
-        <button class="navigation__balance-button">
-          <img class="navigation__balance-button-icon" src="../img/plus.svg">
-        </button>
-      </div>
-      <div class="navigation__support">
-        <div class="navigation__support-text">
-          <div class="navigation__support-title">Ваш менеджер</div>
-          <div class="navigation__support-subtitle">@username</div>
-        </div>
-        <button class="navigation__support-button">
-          <img class="navigation__support-button-icon" src="../img/message.svg">
-        </button>
-      </div>
       <div class="navigation__license">
         <div class="navigation__license-text">
           <div>Все права защинены</div>
           <div>2021 © 1win Shop</div>
         </div>
         <div class="navigation__license-lang">
+          <span>RU</span>
           <img class="navigation__license-lang-img" src="../img/ru.svg">
         </div>
       </div>
-      <span class="navigation__separate"></span>
-      <div class="navigation__burger">
-        <img class="navigation__profile-img" src="../img/burger.svg">
-      </div>
-    </nav>
-    <main class="main">
-      <div class="main__content main__content_menu">
-        <div class="main__title">Личный кабинет</div>
-        <div class="main__banner orange">
-          <img class="main__banner-bg" src="../img/banners/banner2/banner-bg.png">
-          <div class="main__banner-subtitle">
-            Хочешь убедиться в этом?<br>
-            Открой DEMO-админку будущей прилки.
-          </div>
-          <button class="main__banner-button">Открыть</button>
-        </div>
-
-        <div class="main__nav-personal">
-          <div class="main__nav-item active">Обзор</div>
-          <div class="main__nav-item">Пополнение баланса </div>
-          <div class="main__nav-item">Мои приложения</div>
-          <div class="main__nav-item">Мои FB аккаунты / BM</div>
-          <div class="main__nav-item">История покупок</div>
-          <div class="main__nav-item">Сессии / доступ в ЛК</div>
-          <div class="main__nav-item">API</div>
-        </div>
-
-        <div class="main__personal-content">
-          <div class="main__personal-block blue">
-            <img class="main__personal-block-img" src="../img/personal/wallet.png">
-            <div class="main__personal-block-text">Пополнение<br>баланса</div>
-          </div>
-          <div class="main__personal-block red">
-            <img class="main__personal-block-img" src="../img/personal/gamepad.png">
-            <div class="main__personal-block-text">Мои<br>приложения</div>
-          </div>
-          <div class="main__personal-block purple">
-            <img class="main__personal-block-img" src="../img/personal/info.png">
-            <div class="main__personal-block-text">Мои<br>FB аккаунты / BM</div>
-          </div>
-          <div class="main__personal-block orange">
-            <img class="main__personal-block-img" src="../img/personal/bag.png">
-            <div class="main__personal-block-text">История покупок</div>
-          </div>
-          <div class="main__personal-block geen">
-            <img class="main__personal-block-img" src="../img/personal/shield.png">
-            <div class="main__personal-block-text">Сессии /<br>доступ в ЛК</div>
-          </div>
-          <div class="main__personal-block turquoise">
-            <img class="main__personal-block-img" src="../img/personal/lock.png">
-            <div class="main__personal-block-text">API</div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/buy.svg">
-        <img class="footer__item-icon" src="../img/footer/buy_active.svg">
-        <span class="footer__item-text">Магазин</span>
-      </a>
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/gamepad.svg">
-        <img class="footer__item-icon" src="../img/footer/gamepad_active.svg">
-        <span class="footer__item-text">Приложения</span>
-      </a>
-      <a class="footer__item active" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/profile.svg">
-        <img class="footer__item-icon" src="../img/footer/profile_active.svg">
-        <span class="footer__item-text">Профиль</span>
-      </a>
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
-        <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
-        <span class="footer__item-text">Корзина</span>
-      </a>
-    </footer>
+    </div>
   </div>
+</div>
+<div class="root">
+  <nav class="navigation">
+    <div class="navigation__logo-container">
+      <img class="navigation__logo small" src="../img/logo.svg">
+    </div>
+    <div class="navigation__profile">
+      <img class="navigation__profile-img" src="../img/profile.png">
+      <div class="navigation__profile-text">
+        <div class="navigation__profile-email">@john4</div>
+        <div class="navigation__profile-name">John Doe</div>
+      </div>
+    </div>
+    <div class="navigation__list">
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/basket.svg">
+        <div class="navigation__item-text">Корзина</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
+        <div class="navigation__item-text">Магазин</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
+        <div class="navigation__item-text">Приложения</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
+        <div class="navigation__item-text">API</div>
+      </div>
+      <div class="navigation__item active">
+        <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
+        <div class="navigation__item-text">Личный кабинет</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/edit-square.svg">
+        <div class="navigation__item-text">Лента</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/chat.svg">
+        <div class="navigation__item-text">Контакты</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/star.svg">
+        <div class="navigation__item-text">Бонусы</div>
+      </div>
+    </div>
+    <div class="navigation__balance top">
+      <div class="navigation__balance-text">
+        <div class="navigation__balance-title">Баланс</div>
+        <div class="navigation__balance-subtitle">$ 229.92</div>
+      </div>
+      <button class="navigation__balance-button">
+        <img class="navigation__balance-button-icon" src="../img/plus.svg">
+      </button>
+    </div>
+    <div class="navigation__support">
+      <div class="navigation__support-text">
+        <div class="navigation__support-title">Ваш менеджер</div>
+        <div class="navigation__support-subtitle">@username</div>
+      </div>
+      <button class="navigation__support-button">
+        <img class="navigation__support-button-icon" src="../img/message.svg">
+      </button>
+    </div>
+    <div class="navigation__license">
+      <div class="navigation__license-text">
+        <div>Все права защинены</div>
+        <div>2021 © 1win Shop</div>
+      </div>
+      <div class="navigation__license-lang">
+        <img class="navigation__license-lang-img" src="../img/ru.svg">
+      </div>
+    </div>
+    <span class="navigation__separate"></span>
+    <div class="navigation__burger burger-trigger">
+      <img class="navigation__profile-img" src="../img/burger.svg">
+    </div>
+  </nav>
+  <main class="main">
+    <div class="main__content main__content_menu">
+      <div class="main__title">Личный кабинет</div>
+      <div class="main__banner orange">
+        <img class="main__banner-bg" src="../img/banners/banner2/banner-bg.png">
+        <div class="main__banner-subtitle">
+          Хочешь убедиться в этом?<br>
+          Открой DEMO-админку будущей прилки.
+        </div>
+        <button class="main__banner-button">Открыть</button>
+      </div>
+
+      <div class="main__nav-personal">
+        <div class="main__nav-item active">Обзор</div>
+        <div class="main__nav-item">Пополнение баланса</div>
+        <div class="main__nav-item">Мои приложения</div>
+        <div class="main__nav-item">Мои FB аккаунты / BM</div>
+        <div class="main__nav-item">История покупок</div>
+        <div class="main__nav-item">Сессии / доступ в ЛК</div>
+        <div class="main__nav-item">API</div>
+      </div>
+
+      <div class="main__personal-content">
+        <div class="main__personal-block blue">
+          <img class="main__personal-block-img" src="../img/personal/wallet.png">
+          <div class="main__personal-block-text">Пополнение<br>баланса</div>
+        </div>
+        <div class="main__personal-block red">
+          <img class="main__personal-block-img" src="../img/personal/gamepad.png">
+          <div class="main__personal-block-text">Мои<br>приложения</div>
+        </div>
+        <div class="main__personal-block purple">
+          <img class="main__personal-block-img" src="../img/personal/info.png">
+          <div class="main__personal-block-text">Мои<br>FB аккаунты / BM</div>
+        </div>
+        <div class="main__personal-block orange">
+          <img class="main__personal-block-img" src="../img/personal/bag.png">
+          <div class="main__personal-block-text">История покупок</div>
+        </div>
+        <div class="main__personal-block geen">
+          <img class="main__personal-block-img" src="../img/personal/shield.png">
+          <div class="main__personal-block-text">Сессии /<br>доступ в ЛК</div>
+        </div>
+        <div class="main__personal-block turquoise">
+          <img class="main__personal-block-img" src="../img/personal/lock.png">
+          <div class="main__personal-block-text">API</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/buy.svg">
+      <img class="footer__item-icon" src="../img/footer/buy_active.svg">
+      <span class="footer__item-text">Магазин</span>
+    </a>
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/gamepad.svg">
+      <img class="footer__item-icon" src="../img/footer/gamepad_active.svg">
+      <span class="footer__item-text">Приложения</span>
+    </a>
+    <a class="footer__item active" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/profile.svg">
+      <img class="footer__item-icon" src="../img/footer/profile_active.svg">
+      <span class="footer__item-text">Профиль</span>
+    </a>
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
+      <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
+      <span class="footer__item-text">Корзина</span>
+    </a>
+  </footer>
+</div>
+<script src="../js/index.js"></script>
+</body>
 </html>

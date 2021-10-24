@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
- <head>
-   <title>1win shop</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
-   <style>
-    @import url("../css/style.css");
-   </style>
- </head>
- <body>
-  <div class="root">
-    <nav class="navigation">
-      <div class="navigation__logo-container">
-        <img class="navigation__logo small" src="../img/logo.svg">
-      </div>
-      <div class="navigation__profile">
-        <img class="navigation__profile-img" src="../img/profile.png">
-        <div class="navigation__profile-text">
-          <div class="navigation__profile-email">@john4</div>
-          <div class="navigation__profile-name">John Doe</div>
+<head>
+  <title>1win shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+  <style>
+      @import url("../css/style.css");
+  </style>
+</head>
+<body>
+<div class="burger-layout">
+  <div class="burger">
+    <div class="burger-content">
+      <div class="burger-content-profile">
+        <a class="navigation__profile" href="javascript:">
+          <img class="navigation__profile-img" src="../img/profile.png">
+          <div class="navigation__profile-text">
+            <div class="navigation__profile-email">@john4</div>
+            <div class="navigation__profile-name">John Doe</div>
+          </div>
+        </a>
+        <div class="navigation__balance top">
+          <div class="navigation__balance-text">
+            <div class="navigation__balance-title">Баланс</div>
+            <div class="navigation__balance-subtitle">229.92$</div>
+          </div>
+          <button class="navigation__balance-button">
+            <img class="navigation__balance-button-icon" src="../img/plus.svg">
+          </button>
         </div>
       </div>
       <div class="navigation__list">
@@ -30,7 +40,7 @@
           <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
           <div class="navigation__item-text">Магазин</div>
         </div>
-        <div class="navigation__item">
+        <div class="navigation__item active">
           <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
           <div class="navigation__item-text">Приложения</div>
         </div>
@@ -38,7 +48,7 @@
           <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
           <div class="navigation__item-text">API</div>
         </div>
-        <div class="navigation__item active">
+        <div class="navigation__item">
           <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
           <div class="navigation__item-text">Личный кабинет</div>
         </div>
@@ -55,426 +65,522 @@
           <div class="navigation__item-text">Бонусы</div>
         </div>
       </div>
-      <div class="navigation__balance top">
-        <div class="navigation__balance-text">
-          <div class="navigation__balance-title">Баланс</div>
-          <div class="navigation__balance-subtitle">$ 229.92</div>
-        </div>
-        <button class="navigation__balance-button">
-          <img class="navigation__balance-button-icon" src="../img/plus.svg">
-        </button>
-      </div>
-      <div class="navigation__support">
-        <div class="navigation__support-text">
-          <div class="navigation__support-title">Ваш менеджер</div>
-          <div class="navigation__support-subtitle">@username</div>
-        </div>
-        <button class="navigation__support-button">
-          <img class="navigation__support-button-icon" src="../img/message.svg">
-        </button>
-      </div>
       <div class="navigation__license">
         <div class="navigation__license-text">
           <div>Все права защинены</div>
           <div>2021 © 1win Shop</div>
         </div>
         <div class="navigation__license-lang">
+          <span>RU</span>
           <img class="navigation__license-lang-img" src="../img/ru.svg">
         </div>
       </div>
-      <span class="navigation__separate"></span>
-      <div class="navigation__burger">
-        <img class="navigation__profile-img" src="../img/burger.svg">
-      </div>
-    </nav>
-    <main class="main">
-      <div class="main__content">
-        <a class="main__back-link-mobile" href="javascript:">Мои приложения</a>
-        <div class="main__path">
-          <div class="main__path-item">
-            <img class="main__item-1-icon" src="../img/profile-grey.svg">
-            <div class="main__path-item-1-text">Личный кабинет</div>
-          </div>
-          <div class="main__path-separator">/</div>
-          <div class="main__path-item">
-            <img class="main__item-1-icon" src="../img/app/gamepad.svg">
-            <div class="main__path-item-1-text">Мои приложения</div>
-          </div>
-          <div class="main__path-separator">/</div>
-          <div class="main__path-item name">
-            <img class="main__item-1-icon" src="../img/app/setting.svg">
-            <div class="main__path-item-1-text">Master Coin аналитика</div>
-          </div>
-        </div>
-
-        <div class="main__app-analytic">
-          <div class="main__app-header-name analytic">Master Coin / Аналитика</div>
-
-          <div class="main__notify error analytic">Бан в Google Play  /  Все кто успел установить приложение – видят ваш оффер, новых установок не будет</div>
-
-          <div class="main__app-analytic-title">Лог запусков приложенияv</div>
-
-          <div class="main__app-analytic-table">
-            <div class="main__app-analytic-table-header">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">Дата</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">Поток</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">Цепь–ссылка</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">Удерж.</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">Устройство</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">IP</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Провайдер</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">Гео</div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-
-            <div class="main__app-analytic-table-line">
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                26.10.20,<br>
-                17:00:37
-              </div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
-                <span>Silesian Voivodeship, Katowice</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="main__app-analytic-menu">
-            <button class="main__app-analytic-menu-button main__app-analytic-menu-prev">
-              <img class="main__app-analytic-menu-prev-img" src="../img/chevron-white.svg">
-            </button>
-            <div class="main__app-analytic-menu-page">1</div>
-            <div class="main__app-analytic-menu-page">2</div>
-            <div class="main__app-analytic-menu-page active">3</div>
-            <div class="main__app-analytic-menu-page">4</div>
-            <div class="main__app-analytic-menu-page">5</div>
-            <button class="main__app-analytic-menu-button main__app-analytic-menu-next">
-              <img class="main__app-analytic-menu-next-img" src="../img/chevron-white.svg">
-            </button>
-          </div>
-
-          <div class="main__app-analytic-table_mobile">
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-          </div>
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-            </div>
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-            </div>
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-            </div>
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-            </div>
-            <div class="main__app-analytic-table_mobile-item">
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-3">https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14</div>
-                <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.	</div>
-              </div>
-              <div class="main__app-analytic_mobile-container">
-                <div class="main__app-analytic_mobile-top">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
-                  <span></span>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
-                    <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
-                  </div>
-                </div>
-                <div class="main__app-analytic_mobile-bottom">
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
-                    26.10.20,<br>
-                    17:00:37
-                  </div>
-                  <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/buy.svg">
-        <img class="footer__item-icon" src="../img/footer/buy_active.svg">
-        <span class="footer__item-text">Магазин</span>
-      </a>
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/gamepad.svg">
-        <img class="footer__item-icon" src="../img/footer/gamepad_active.svg">
-        <span class="footer__item-text">Приложения</span>
-      </a>
-      <a class="footer__item active" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/profile.svg">
-        <img class="footer__item-icon" src="../img/footer/profile_active.svg">
-        <span class="footer__item-text">Профиль</span>
-      </a>
-      <a class="footer__item" href="javascript:">
-        <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
-        <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
-        <span class="footer__item-text">Корзина</span>
-      </a>
-    </footer>
+    </div>
   </div>
+</div>
+<div class="root">
+  <nav class="navigation">
+    <div class="navigation__logo-container">
+      <img class="navigation__logo small" src="../img/logo.svg">
+    </div>
+    <div class="navigation__profile">
+      <img class="navigation__profile-img" src="../img/profile.png">
+      <div class="navigation__profile-text">
+        <div class="navigation__profile-email">@john4</div>
+        <div class="navigation__profile-name">John Doe</div>
+      </div>
+    </div>
+    <div class="navigation__list">
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/basket.svg">
+        <div class="navigation__item-text">Корзина</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/shop.svg">
+        <div class="navigation__item-text">Магазин</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/gamepad.svg">
+        <div class="navigation__item-text">Приложения</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/password.svg">
+        <div class="navigation__item-text">API</div>
+      </div>
+      <div class="navigation__item active">
+        <img class="navigation__item-icon" src="../img/icon-nav/profile.svg">
+        <div class="navigation__item-text">Личный кабинет</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/edit-square.svg">
+        <div class="navigation__item-text">Лента</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/chat.svg">
+        <div class="navigation__item-text">Контакты</div>
+      </div>
+      <div class="navigation__item">
+        <img class="navigation__item-icon" src="../img/icon-nav/star.svg">
+        <div class="navigation__item-text">Бонусы</div>
+      </div>
+    </div>
+    <div class="navigation__balance top">
+      <div class="navigation__balance-text">
+        <div class="navigation__balance-title">Баланс</div>
+        <div class="navigation__balance-subtitle">$ 229.92</div>
+      </div>
+      <button class="navigation__balance-button">
+        <img class="navigation__balance-button-icon" src="../img/plus.svg">
+      </button>
+    </div>
+    <div class="navigation__support">
+      <div class="navigation__support-text">
+        <div class="navigation__support-title">Ваш менеджер</div>
+        <div class="navigation__support-subtitle">@username</div>
+      </div>
+      <button class="navigation__support-button">
+        <img class="navigation__support-button-icon" src="../img/message.svg">
+      </button>
+    </div>
+    <div class="navigation__license">
+      <div class="navigation__license-text">
+        <div>Все права защинены</div>
+        <div>2021 © 1win Shop</div>
+      </div>
+      <div class="navigation__license-lang">
+        <img class="navigation__license-lang-img" src="../img/ru.svg">
+      </div>
+    </div>
+    <span class="navigation__separate"></span>
+    <div class="navigation__burger burger-trigger">
+      <img class="navigation__profile-img" src="../img/burger.svg">
+    </div>
+  </nav>
+  <main class="main">
+    <div class="main__content">
+      <a class="main__back-link-mobile" href="javascript:">Мои приложения</a>
+      <div class="main__path">
+        <div class="main__path-item">
+          <img class="main__item-1-icon" src="../img/profile-grey.svg">
+          <div class="main__path-item-1-text">Личный кабинет</div>
+        </div>
+        <div class="main__path-separator">/</div>
+        <div class="main__path-item">
+          <img class="main__item-1-icon" src="../img/app/gamepad.svg">
+          <div class="main__path-item-1-text">Мои приложения</div>
+        </div>
+        <div class="main__path-separator">/</div>
+        <div class="main__path-item name">
+          <img class="main__item-1-icon" src="../img/app/setting.svg">
+          <div class="main__path-item-1-text">Master Coin аналитика</div>
+        </div>
+      </div>
+
+      <div class="main__app-analytic">
+        <div class="main__app-header-name analytic">Master Coin / Аналитика</div>
+
+        <div class="main__notify error analytic">Бан в Google Play / Все кто успел установить приложение – видят ваш
+          оффер, новых установок не будет
+        </div>
+
+        <div class="main__app-analytic-title">Лог запусков приложенияv</div>
+
+        <div class="main__app-analytic-table">
+          <div class="main__app-analytic-table-header">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">Дата</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">Поток</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">Цепь–ссылка</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">Удерж.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">Устройство</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">IP</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Провайдер</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">Гео</div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+
+          <div class="main__app-analytic-table-line">
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+              26.10.20,<br>
+              17:00:37
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+              https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+            </div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-5">–</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+              <img class="main__app-analytic-table-column-img" src="../img/flag-ua.svg">
+              <span>Silesian Voivodeship, Katowice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__app-analytic-menu">
+          <button class="main__app-analytic-menu-button main__app-analytic-menu-prev">
+            <img class="main__app-analytic-menu-prev-img" src="../img/chevron-white.svg">
+          </button>
+          <div class="main__app-analytic-menu-page">1</div>
+          <div class="main__app-analytic-menu-page">2</div>
+          <div class="main__app-analytic-menu-page active">3</div>
+          <div class="main__app-analytic-menu-page">4</div>
+          <div class="main__app-analytic-menu-page">5</div>
+          <button class="main__app-analytic-menu-button main__app-analytic-menu-next">
+            <img class="main__app-analytic-menu-next-img" src="../img/chevron-white.svg">
+          </button>
+        </div>
+
+        <div class="main__app-analytic-table_mobile">
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__app-analytic-table_mobile-item">
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-3">
+                https://profitmaximum.pl/?apsubid1=andoid&apsubid2=A&apsubid3=2003-14
+              </div>
+              <div class="main__app-analytic-table-column main__app-analytic-table-column-7">Polkomtel Sp. z o.o.</div>
+            </div>
+            <div class="main__app-analytic_mobile-container">
+              <div class="main__app-analytic_mobile-top">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-2">MAXIMIZER</div>
+                <span></span>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-4">54 мин</div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-8">
+                  <img class="main__app-analytic-table-column-img" src="../img/flag-eu.svg">
+                </div>
+              </div>
+              <div class="main__app-analytic_mobile-bottom">
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-1">
+                  26.10.20,<br>
+                  17:00:37
+                </div>
+                <div class="main__app-analytic-table-column main__app-analytic-table-column-6">188.146.224.216</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/buy.svg">
+      <img class="footer__item-icon" src="../img/footer/buy_active.svg">
+      <span class="footer__item-text">Магазин</span>
+    </a>
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/gamepad.svg">
+      <img class="footer__item-icon" src="../img/footer/gamepad_active.svg">
+      <span class="footer__item-text">Приложения</span>
+    </a>
+    <a class="footer__item active" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/profile.svg">
+      <img class="footer__item-icon" src="../img/footer/profile_active.svg">
+      <span class="footer__item-text">Профиль</span>
+    </a>
+    <a class="footer__item" href="javascript:">
+      <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
+      <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
+      <span class="footer__item-text">Корзина</span>
+    </a>
+  </footer>
+</div>
+<script src="../js/index.js"></script>
+</body>
 </html>
