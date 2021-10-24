@@ -628,6 +628,7 @@ const openAuth2 = document.querySelector('.modal-layout-auth .modal-open-auth-2'
 
 const triggerAuth2 = document.getElementsByClassName('modal-trigger-auth-2')[0];
 const layoutAuth2 = document.getElementsByClassName('modal-layout-auth-2')[0];
+const closeAuth2 = document.querySelector('.modal-layout-auth-2 .modal-close');
 
 const triggerBonus = document.getElementsByClassName('modal-trigger-bonus')[0];
 const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
@@ -655,10 +656,11 @@ const modals = {
         }),
     } : {},
 
-    ...triggerAuth2 && layoutAuth2 ? {
+    ...triggerAuth2 && layoutAuth2 && closeAuth2 ? {
         auth2: new Modal({
             triggers: [triggerAuth2],
             layout: layoutAuth2,
+            closeTriggers: [closeAuth2],
        }),
     } : {},
 

@@ -4692,6 +4692,10 @@
 	margin-left: 48px;
 }
 
+.modal-title.not-authorized.mobile {
+	display: none;
+}
+
 .modal-title.auth-2 {
 	margin-top: 20px;
 }
