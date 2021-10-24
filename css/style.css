@@ -6139,8 +6139,7 @@ html {
 	}
 
 	.modal-layout {
-		padding: 60px 25px 25px;
-		overflow-y: auto;
+		padding: 25px;
 		box-sizing: border-box;
 	}
 
@@ -6269,10 +6268,13 @@ html {
 	.modal,
 	.modal.xl {
 		max-width: 375px;
+		max-height: 100%;
+    	overflow-y: auto;
 	}
 
 	.modal-header {
 		padding: 20px 20px 0 20px;
+		flex: none;
 	}
 
 	.modal-title.not-authorized {
@@ -6293,6 +6295,7 @@ html {
 
 	.modal-content {
 		padding: 0 20px 20px 20px;
+		flex: none;
 	}
 
 	.modal-content.not-authorized {
