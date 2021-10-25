@@ -964,6 +964,11 @@
 	margin-top: 80px;
 }
 
+.main__app-settings-title-wrapper-button {
+	display: none;
+	justify-content: space-between;
+}
+
 .main__app-settings-title-img {
 	width: 30px;
 	margin-right: 10px;
@@ -1334,6 +1339,10 @@
 	display: flex;
 	align-items: center;
 	height: 74px;
+}
+
+.main__app-settings-table-line-container {
+	display: flex;
 }
 
 .main__app-settings-table-line:nth-child(odd) {
@@ -4975,6 +4984,10 @@
     margin-left: 10px;
 }
 
+.main__banner.mobile {
+	display: none;
+}
+
 html,
 body,
 p,
@@ -5811,9 +5824,161 @@ html {
 	.main__section.applications {
 		margin-top: 10px;
 	}
+
+	.main__content_settings .main__app-header-section-4,
+	.main__content_settings .main__app-header-section-separator,
+	.main__app-settings-title-button.blue,
+	.main__app-settings-title-button.grey {
+		display: none;
+	}
+
+	.main__app-settings-title-wrapper {
+		margin-top: 0;
+	}
+
+	.main__app-settings-text {
+		margin-top: 6px;
+	}
+
+	.main__app-settings-title-button.blue.mobile,
+	.main__app-settings-title-button.grey.mobile,
+	.main__app-settings-title-button.mobile {
+		display: block;
+		margin: 15px auto 30px;
+		max-width: 400px;
+		min-width: auto;
+		width: 100%;
+	}
+
+	.main__app-settings-form-wrapper,
+	.main__app-settings-table-header,
+	.main__app-settings-table-column-2.push {
+		display: none;
+	}
+
+	.main__app-settings-title {
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: -0.2px;
+	}
+
+	.main__app-settings-title-wrapper {
+		margin: 0 0 10px;
+	}
+
+	.main__notify.app-settings,
+	.main__notify.sharing {
+		margin: 0 0 10px;
+	}
+
+	.main__app-settings-table {
+		margin: 0;
+	}
+
+	.main__app-settings-table-line {
+		background: rgba(151, 174, 225, 0.11);
+		border-radius: 15px;
+		height: auto;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		padding: 10px 15px;
+	}
+
+	.main__app-settings-table-line:nth-child(even) {
+		background: rgba(151, 174, 225, 0.11);
+	}
+
+	.main__app-settings-table-line-container {
+		flex-direction: column;
+	}
+
+	.main__app-settings-table-column.main__app-settings-table-column-1.push,
+	.main__app-settings-table-column.main__app-settings-table-column-3.push,
+	.main__app-settings-table-column.main__app-settings-table-column-2.deep-links.deep-links-span {
+		max-width: 50%;
+	}
+
+	.main__app-settings-table-column.main__app-settings-table-column-2.fb {
+		margin-left: 0;
+	}
+
+	.main__app-settings-table-column.main__app-settings-table-column-2.fb,
+	.main__app-settings-table-column.main__app-settings-table-column-3.fb {
+		min-width: auto;
+		width: auto;
+	}
+
+	.main__app-settings-table-column.main__app-settings-table-column-2.fb {
+		margin-left: auto;
+	}
+
+	.main__app-settings-table-column-deep-link-spans{
+		overflow: hidden;
+		max-height: 39px;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06px;
+	}
+
+	.main__app-settings-table-column:not(:last-child) {
+		border: none;
+	}
+
+	.main__app-settings-table-column.deep-links-span .main__app-settings-table-column-button {
+		flex-shrink: 0;
+	}
+
+	.main__app-settings-title-wrapper-button {
+		display: flex;
+	}
+
+	.main__app-settings-title-wrapper-button .main__app-settings-title-button.grey {
+		margin-right: 10px;
+	}
+
+	.main__payment-cards {
+		display: none;
+	}
+
+	.main__banner.blue {
+		display: none;
+	}
+
+	.main__banner.mobile {
+		display: block;
+		padding-bottom: 32.5%;
+		padding-top: 0;
+		padding-left: 0;
+	}
+
+	.main__banner.mobile img {
+		position: absolute;
+	}
 }
 
 @media (max-width: 675px) {
+	.main__card-light-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+		grid-gap: 15px;
+		margin-top: 15px;
+	}
+
+	.main__card-light:not(:first-child) {
+		margin: 0;
+	}
+
+	.main__banner {
+		margin-bottom: 15px;
+	}
+
+	.main__section {
+		margin-top: 15px;
+	}
+
 	.main__news-articlent-text {
 		font-size: 14px;
 		line-height: 20px;
@@ -6583,5 +6748,11 @@ html {
 		border: none;
 		outline: none;
 		background: rgba(148, 166, 205, .2);
+	}
+	.main__news-cards,
+	.main__personal-content,
+	.main__bonuses,
+	.main__section {
+		margin-top: 20px;
 	}
 }

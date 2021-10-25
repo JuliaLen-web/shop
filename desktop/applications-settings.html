@@ -157,7 +157,7 @@
     </div>
   </nav>
   <main class="main">
-    <div class="main__content">
+    <div class="main__content main__content_settings">
       <a class="main__back-link-mobile" href="javascript:">Назад</a>
       <div class="main__title">Master Coin</div>
       <div class="main__path">
@@ -218,27 +218,27 @@
           </div>
           <div class="main__app-header-section-mobile-info">
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/discount.svg">
               <span>За инсталл</span>
             </div>
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/download.svg">
               <span>5¢</span>
             </div>
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/android.svg">
               <span>Бан</span>
             </div>
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/statistics.svg">
               <span>1000 инсталлов</span>
             </div>
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/buy.svg">
               <span>$50 / день</span>
             </div>
             <div class="main__app-header-section-mobile-info-item">
-              <img src="../img/dropdown/casino-color.svg">
+              <img src="../img/app/icons/ios.svg">
               <span>Активно</span>
             </div>
           </div>
@@ -279,13 +279,15 @@
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/app.svg">
           <div class="main__app-settings-title">Уведомления о бане Google Play</div>
-          <button class="main__app-settings-title-button blue">Настроить</button>
+
         </div>
 
         <div class="main__app-settings-text">
           По-умолчанию владелец приложения получает уведомление в телеграмм.<br>
           Если вы хотите, чтобы это уведомление получили и другие участники команды необходимо настроить уведомления.
         </div>
+
+        <button class="main__app-settings-title-button blue mobile">Настроить</button>
 
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/stream.svg">
@@ -414,6 +416,7 @@
           </div>
         </div>
 
+
         <div class="main__app-settings-table">
           <div class="main__app-settings-table-header">
             <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">Название</div>
@@ -424,93 +427,145 @@
           </div>
 
           <div class="main__app-settings-table-line">
-            <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name
-            </div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
-              <div class="main__app-settings-table-column-deep-link-spans">
-                <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber2=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber3=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber4=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber5=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name
               </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
+                <div class="main__app-settings-table-column-deep-link-spans">
+                  <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber2=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber3=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber4=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber5=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                </div>
 
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
+                </button>
+              </div>
             </div>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
-            <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
-              26.10.20,<br>
-              17:37
-            </div>
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
+                26.10.20,<br>
+                17:37
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
+                </button>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
+                </button>
 
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
-              </button>
-
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
             </div>
           </div>
 
           <div class="main__app-settings-table-line">
-            <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name
-            </div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
-              <div class="main__app-settings-table-column-deep-link-spans">
-                <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber2=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber3=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber4=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
-                <span>  &suber5=  </span>
-                <span class="main__app-settings-table-column-star">***</span>
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name
               </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
+                <div class="main__app-settings-table-column-deep-link-spans">
+                  <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber2=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber3=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber4=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber5=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                </div>
 
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
+                </button>
+              </div>
             </div>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
-            <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
-              26.10.20,<br>
-              17:37
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
+                26.10.20,<br>
+                17:37
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
+                </button>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__app-settings-table-line">
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 deep-links">DeepLink Name
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 deep-links deep-links-span">
+                <div class="main__app-settings-table-column-deep-link-spans">
+                  <span>mrcoin://goto?deeppass=46172b5a&suber1=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber2=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber3=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber4=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                  <span>  &suber5=  </span>
+                  <span class="main__app-settings-table-column-star">***</span>
+                </div>
+
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/copy-grey.svg">
+                </button>
+              </div>
             </div>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
-              </button>
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 deep-links">1944</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 deep-links">
+                26.10.20,<br>
+                17:37
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 deep-links">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/chart-grey.svg">
+                </button>
 
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/setting-grey.svg">
+                </button>
 
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <button class="main__app-settings-title-button blue mobile">Создать поток</button>
 
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/push.svg">
@@ -637,76 +692,77 @@
           </div>
 
           <div class="main__app-settings-table-line">
-            <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
-              26.10.20,<br>
-              17:00:37
-            </div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
-              <div>
-                <span class="bold">I make 1050$ per day!</span><br>
-                No need to study anything! The robot will earn.
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
+                26.10.20,<br>
+                17:00:37
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
+                <div>
+                  <span class="bold">I make 1050$ per day!</span><br>
+                  No need to study anything! The robot will earn.
+                </div>
               </div>
             </div>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
                 <span class="red">
                   ⛔️ Ошибка отправки, <br>
                   создайте задачу заново
                 </span>
-            </div>
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
+                </button>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
-              </button>
-
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
-              </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
             </div>
           </div>
 
           <div class="main__app-settings-table-line">
-            <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
-              26.10.20,<br>
-              17:00:37
-            </div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
-              <div>
-                <span class="bold">I make 1050$ per day!</span><br>
-                No need to study anything! The robot will earn.<br>
-                Изображение: <span class="blue">Смотреть</span>
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-1 push">Pushname</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-2 push">
+                26.10.20,<br>
+                17:00:37
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-3 push">
+                <div>
+                  <span class="bold">I make 1050$ per day!</span><br>
+                  No need to study anything! The robot will earn.<br>
+                  Изображение: <span class="blue">Смотреть</span>
+                </div>
               </div>
             </div>
 
-            <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
+            <div class="main__app-settings-table-line-container">
+              <div class="main__app-settings-table-column main__app-settings-table-column-4 push">0</div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-5 push">
                 <span class="red">
                   ⛔️ Ошибка отправки, <br>
                   создайте задачу заново
                 </span>
-            </div>
-
-            <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
-              </button>
-
-              <button class="main__app-settings-table-column-button">
-                <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
-              </button>
+              </div>
+              <div class="main__app-settings-table-column main__app-settings-table-column-6 push">
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/show-grey.svg">
+                </button>
+                <button class="main__app-settings-table-column-button">
+                  <img class="main__app-settings-table-column-button-icon" src="../img/delete-grey.svg">
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        <button class="main__app-settings-title-button blue mobile">Создать рассылку</button>
 
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/fb.svg">
@@ -727,6 +783,8 @@
 
             <div class="main__app-settings-table-column main__app-settings-table-column-2 fb">45</div>
 
+            <span></span>
+
             <div class="main__app-settings-table-column main__app-settings-table-column-3 fb">31.06.2020, 15:22</div>
           </div>
 
@@ -735,8 +793,15 @@
 
             <div class="main__app-settings-table-column main__app-settings-table-column-2 fb">2345</div>
 
+            <span></span>
+
             <div class="main__app-settings-table-column main__app-settings-table-column-3 fb">31.06.2020, 15:22</div>
           </div>
+        </div>
+
+        <div class="main__app-settings-title-wrapper-button">
+          <button class="main__app-settings-title-button grey mobile">Как настроить?</button>
+          <button class="main__app-settings-title-button blue mobile">Создать рассылку</button>
         </div>
 
         <div class="main__app-settings-title-wrapper">
@@ -916,6 +981,8 @@
             <img class="main__app-settings-sharing-img" src="../img/verified.svg">
           </div>
         </div>
+
+        <button class="main__app-settings-title-button blue mobile">Добавить рекламный кабинет</button>
       </div>
     </div>
   </main>
