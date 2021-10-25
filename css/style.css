@@ -4954,6 +4954,27 @@
 	opacity: 0.5;
 }
 
+.multi-input {
+    display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.multi-input input {
+    width: 43px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.multi-input input:not(:first-child) {
+    margin-left: 10px;
+}
+
 html,
 body,
 p,
@@ -6546,5 +6567,21 @@ html {
 		border: none;
 		background: rgba(148, 166, 205, 0.2);
 		border-radius: 10px;
+	}
+	.modal-bonus-img {
+		height: 65px;
+		margin-left: auto;
+		margin-right: -20px;
+		margin-top: -7px;
+		margin-bottom: 15px;
+	}
+	.multi-input input {
+		width: 45px;
+		height: 45px;
+		text-align: center;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background: rgba(148, 166, 205, .2);
 	}
 }
