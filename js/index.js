@@ -696,7 +696,9 @@ if (triggerBurger && layoutBurger) {
 
 
 //вот так можно получить значение из инпута числом +inputs.map((input) => input.value).join('')
-if (document.querySelector('form') && [...form.querySelectorAll('input')]) {
+const multiInput = document.getElementsByClassName('multi-input')[0];
+
+if (multiInput) {
     const form = document.querySelector('form');
     const inputs = [...form.querySelectorAll('input')];
     const KEYBOARDS = {
