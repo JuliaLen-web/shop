@@ -78,6 +78,69 @@
     </div>
   </div>
 </div>
+<div class="modal-layout modal-layout-ban-gp">
+  <div class="modal">
+    <div class="modal-header top ">
+      <div class="modal-title">Уведомления о бане Google Play</div>
+
+      <button class="modal-close modal-close-button">
+        <img class="modal-close-button-icon" src="../img/close-grey.svg">
+      </button>
+    </div>
+
+    <div class="modal-content app-settings">
+      <div class="modal-content-text app-settings gp1">
+        Владелец приложения получает уведомление о блокировке приложения в Telegram.<br>
+        Если этого недостаточно, Вы можете запросить другие уведомления:
+      </div>
+
+      <div class="modal-content-title app-settings gp">Откроем ваши Callback-ссылки</div>
+
+      <div class="modal-input-container app-settings">
+        <input class="modal-input app-settings" type="text" placeholder="Ссылка 1">
+      </div>
+
+      <div class="modal-input-container app-settings">
+        <input class="modal-input app-settings" type="text" placeholder="Ссылка 2">
+      </div>
+
+      <div class="modal-input-container app-settings">
+        <input class="modal-input app-settings" type="text" placeholder="Ссылка 3">
+      </div>
+
+      <div class="modal-input-text">
+        Переменные для использования в ссылках: <br>
+        {APP_NAME} – Имя приложения<br>
+        {APP_ID} – ID приложения
+      </div>
+
+      <div class="modal-content-title app-settings gp">Напишем в Ваши групповые чаты Telegram</div>
+
+      <div class="modal-content-text app-settings gp2">
+        Чат #1: #59 CPASTORE SUPPORT<br>
+        Чат #2: - не привязан - <br>
+        Чат #3: - не привязан - 
+      </div>
+
+      <div class="modal-content-text app-settings gp3">
+        <span>Добавьте бота </span>
+        <span class="blue">@cpastore_ban_bot </span>
+        <span>в свой групповой чат и напишите там команду</span>
+      </div>
+
+      <div class="modal-content-app-settings-key-container">
+        <div class="modal-content-app-settings-key">/follow_app_status 78X1-0805-2003</div>
+
+        <button class="modal-content-app-settings-key-button">
+          <img class="modal-content-app-settings-key-button-img" src="../img/copy-blue.svg">
+        </button>
+      </div>
+
+      <button class="modal-button app-settings blue modal-finish">Сохранить задачу</button>
+    </div>
+  </div>
+</div>
+
 <div class="root">
   <nav class="navigation">
     <div class="navigation__logo-container">
@@ -280,6 +343,7 @@
           <img class="main__app-settings-title-img" src="../img/app-settings/app.svg">
           <div class="main__app-settings-title">Уведомления о бане Google Play</div>
 
+          <button class="main__app-settings-title-button blue modal-trigger-ban-gp">Настроить</button>
         </div>
 
         <div class="main__app-settings-text">
@@ -287,7 +351,7 @@
           Если вы хотите, чтобы это уведомление получили и другие участники команды необходимо настроить уведомления.
         </div>
 
-        <button class="main__app-settings-title-button blue mobile">Настроить</button>
+        <button class="main__app-settings-title-button blue mobile modal-trigger-ban-gp-mobile">Настроить</button>
 
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/stream.svg">

@@ -1019,6 +1019,10 @@
 	cursor: not-allowed;
 }
 
+.main__app-settings-title-button.mobile {
+	display: none;
+}
+
 .main__app-settings-text {
 	margin-top: 26px;
 	font-size: 13px;
@@ -4961,6 +4965,116 @@
 	letter-spacing: -0.1px;
 	color: #000000;
 	opacity: 0.5;
+}
+
+.modal-button.app-settings {
+	width: 100%;
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	height: 40px;
+}
+
+.modal-button.app-settings.blue {
+	background: linear-gradient(107.15deg, #0095FF 0%, #0855C4 100%);
+	box-shadow: 0px 6px 22px rgba(5, 109, 218, 0.3);
+	color: #FFFFFF;
+	text-shadow: 0px 3px 5px rgba(9, 15, 30, 0.2);
+	margin-top: 30px;
+}
+
+.modal-content.app-settings {
+ padding: 0 30px 30px 30px;
+}
+
+.modal-content-text.app-settings {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1px;
+	color: #000000;
+}
+
+.modal-content-text.app-settings.gp1,
+.modal-content-text.app-settings.gp2 {
+	margin-top: 15px;
+}
+
+.modal-content-text.app-settings.gp3 {
+	margin-top: 20px;
+}
+
+.modal-content-text.app-settings .blue {
+	color: #0855C4;
+	font-weight: 500;
+}
+
+.modal-content-title.app-settings {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.modal-content-title.app-settings.gp {
+	margin-top: 20px;
+}
+
+.modal-input-container.app-settings {
+	margin-top: 15px;
+}
+
+.modal-input.app-settings {
+	height: 40px;
+	border: 1px solid rgba(180, 187, 199, 0.5);
+	border-radius: 10px;
+}
+
+.modal-input.app-settings::placeholder {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1px;
+	color: rgba(92, 114, 163, 0.5);
+}
+
+.modal-input-text {
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(92, 114, 163, 0.5);
+	margin-top: 15px;
+}
+
+.modal-content-app-settings-key-container {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.modal-content-app-settings-key {
+	padding: 0 8px;
+	background: #E9EBEE;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.modal-content-app-settings-key-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	background: rgba(151, 174, 225, 0.2);
+	border-radius: 6px;
+	margin-left: 5px;
+}
+
+.modal-content-app-settings-key-button-img {
+	height: 12px;
 }
 
 .multi-input {

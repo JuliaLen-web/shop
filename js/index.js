@@ -639,6 +639,12 @@ const triggerKeyMobile = document.getElementsByClassName('modal-trigger-key_mobi
 const layoutKey = document.getElementsByClassName('modal-layout-key')[0];
 const closeKey = document.querySelector('.modal-layout-key .modal-close');
 
+const triggerBanGP = document.getElementsByClassName('modal-trigger-ban-gp')[0];
+const triggerBanGPMobile = document.getElementsByClassName('modal-trigger-ban-gp-mobile')[0];
+const layoutBanGP = document.getElementsByClassName('modal-layout-ban-gp')[0];
+const closeBanGP = document.querySelector('.modal-layout-ban-gp .modal-close');
+const finishBanGP = document.querySelector('.modal-layout-ban-gp .modal-finish');
+
 const modals = {
     ...triggerNotAuthorized && layoutNotAuthorized && closeNotAuthorized && openAuth ? {
         notAuthorized: new Modal({
@@ -677,6 +683,14 @@ const modals = {
             triggers: [triggerKey, triggerKeyMobile],
             layout: layoutKey,
             closeTriggers: [closeKey],
+       }),
+    } : {},
+
+    ...triggerBanGP && layoutBanGP && closeBanGP && finishBanGP ? {
+        bonus: new Modal({
+            triggers: [triggerBanGP, triggerBanGPMobile],
+            layout: layoutBanGP,
+            closeTriggers: [closeBanGP, finishBanGP],
        }),
     } : {},
 };
