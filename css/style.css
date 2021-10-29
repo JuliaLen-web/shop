@@ -5217,6 +5217,10 @@
 	display: none;
 }
 
+.main__section-item-mobile {
+	display: none;
+}
+
 html,
 body,
 p,
@@ -5574,6 +5578,14 @@ html {
 	.main__app-header-section-separator {
 		margin: auto 20px 18px 0;
 	}
+
+	.main__app-header-name {
+		display: none;
+	}
+
+	.main__app-header {
+		margin-top: 20px;
+	}
 }
 @media (max-width: 1023px) {
 	.root {
@@ -5808,6 +5820,10 @@ html {
 	.main__nav-personal.my-app {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	.main__section.my-app .main__section-item-container.coming-soon {
+		display: flex;
 	}
 
 	.main__applications-header {
@@ -7199,5 +7215,59 @@ html {
 		text-align: center;
 		background: rgba(26, 136, 243, 0.1);
 		box-sizing: border-box;
+	}
+
+	.main__section-item-mobile {
+		display: flex;
+	}
+
+	.main__section.my-app .main__section-item-container:not(.main__section-item-container.name):not(.main__section-item-container.settings) {
+		display: none
+	}
+
+	.main__section.my-app .main__section-item-mobile .main__section-item-container:not(.main__section-item-container.name):not(.main__section-item-container.settings) {
+		display: flex;
+		margin-left: 0;
+		margin-right: 7px;
+	}
+
+	.main__section.my-app .main__section-item-container.name >.main__section-item-icons {
+		display: none;
+	}
+
+	.main__section.my-app .main__section-item-container.settings {
+		margin-left: auto;
+	}
+
+	.main__section.my-app .main__section-item-container.settings .main__section-item-button.control {
+		width: 27px;
+		height: 27px;
+		margin-left: 5px;
+	}
+
+	.main__section.my-app .main__section-item-mobile .main__section-item-icons {
+		margin-top: 5px;
+	}
+
+	.main__section.my-app .main__section-item-container.settings .main__section-item-button.control .main__section-item-button-icon {
+		width: 18px;
+	}
+
+	.main__section.my-app .main__section-item-mobile .main__section-item-control-wrapper {
+		width: 15px;
+		height: 15px;
+	}
+
+	.main__section.my-app .main__section-item-mobile .main__section-item-control-icon {
+		height: 8px;
+	}
+
+	.main__section-title {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.main__content.main__content_menu.my-app .main__title {
+		display: none;
 	}
 }
