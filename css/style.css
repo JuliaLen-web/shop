@@ -123,6 +123,7 @@
 	letter-spacing: -0.15px;
 	color: rgba(9,15,30,0.8);
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .main__auth-advantage-list {
@@ -131,7 +132,6 @@
 	color: rgba(9,15,30,0.5);
 	list-style: disc;
 	padding-left: 15px;
-	margin-top: 15px;
 }
 
 .main__auth-advantage-img {
@@ -5403,6 +5403,10 @@ html {
 		text-align: right;
 	}
 
+	.main__auth-advantage-wrapper {
+		margin-bottom: 245px;
+	}
+
 	.main {
 		overflow: visible;
 		background: #fff;
@@ -5768,12 +5772,39 @@ html {
 	}
 
 	.main__auth-title {
-		margin-top: 170px;
+		margin-top: 148px;
 	}
 
 	.navigation__button-telegram {
-		max-width: 200px;
+		max-width: none;
+		margin-top: 0;
 		margin-left: auto;
+		width: fit-content;
+	}
+
+	.navigation__button-telegram_text {
+		display: flex;
+		align-items: center;
+	}
+
+	.navigation__button-telegram_title,
+	.navigation__button-telegram_subtitle {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 15px;
+		color: #FFFFFF;
+		text-shadow: 0px 3px 5px rgba(9, 15, 30, 0.2);
+	}
+
+	.navigation__button-telegram_subtitle {
+		margin-left: 3px;
+	}
+
+	.navigation__button-telegram_icon {
+		width: 15px;
+		height: 15px;
+		margin-top: 0;
+		margin-left: 5px;
 	}
 
 	.main__section-item-icons .main__section-item-value {
@@ -6419,8 +6450,13 @@ html {
 	}
 
 	.main__auth-title {
-		font-size: 30px;
-		line-height: 36px;
+		font-family: SF Pro Display;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 28px;
+		letter-spacing: 0.33px;
+		color: #090F1E;
+		
 	}
 
 	.main__auth-subtitle {
@@ -6444,15 +6480,22 @@ html {
 		align-items: center;
 		width: auto;
 		margin-top: 10px;
-		margin-bottom: 170px;
+	}
+
+	.main__auth-bg {
+		left: -53%;
+		position: absolute;
+		bottom: 0;
+		right: -13%;
+		max-width: 167%;
 	}
 	
 	.main__auth-advantage {
 		margin-left: 0;
 		margin-top: 15px;
-		max-width: 360px;
 		width: 100%;
 		box-sizing: border-box;
+		padding: 15px 10px;
 	}
 	
 	.main__auth-advantage:not(:first-child) {
@@ -6460,8 +6503,44 @@ html {
 		margin-top: 15px;
 	}
 
+	.main__auth-advantage-list-container {
+		display: flex;
+	}
+
+	.main__auth-advantage-list {
+		flex: 1;
+	}
+
+	.main__auth-advantage-header {
+		display: flex;
+		align-items: center;
+		margin-left: 5px;
+		margin-bottom: 15px;
+	}
+
+	.main__auth-advantage-img {
+		margin-right: 15px;
+		height: 35px;
+	}
+
+	.main__auth-advantage-title {
+		margin: 0;
+		font-weight: bold;
+	}
+
+	.main__auth-advantage-list {
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06px;
+	}
+
+	.main__auth-advantage-list:not(:first-child) {
+		margin-left: 5px;
+	}
+
 	.navigation__logo {
 		height: 25px;
+		width: auto;
 	}
 
 	.modal-layout {
