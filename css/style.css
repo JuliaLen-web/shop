@@ -4733,6 +4733,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-left: auto;
+	flex: none;
 }
 
 .modal-close-button-icon {
@@ -4882,9 +4883,19 @@
 	margin-left: 10px;
 }
 
+.modal-input-button.grey {
+	background: rgba(151, 174, 225, 0.11);
+	border-radius: 8px;
+	margin-left: 10px;
+}
+
 .modal-input-button-ok {
 	width: 25px;
 	margin-top: 6px;
+}
+
+.modal-input-button-close {
+	width: 24px;
 }
 
 .modal-input-button-ok.auth-2 {
@@ -4984,8 +4995,21 @@
 	margin-top: 30px;
 }
 
+.modal-button.app-settings.grey {
+	background: rgba(151, 174, 225, 0.11);
+	border-radius: 12px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5C72A3;
+}
+
+.modal-button.app-settings.grey.receiving-events {
+	margin-top: 15px;
+}
+
 .modal-content.app-settings {
- padding: 0 30px 30px 30px;
+ 	padding: 0 30px 30px 30px;
 }
 
 .modal-content-text.app-settings {
@@ -4993,6 +5017,18 @@
 	line-height: 18px;
 	letter-spacing: -0.1px;
 	color: #000000;
+}
+
+.modal-content-text.app-settings.receiving-events {
+	margin-top: 15px;
+}
+
+.modal-receiving-events-separator {
+	height: 1px;
+	background: rgba(92, 114, 163, 0.8);
+	opacity: 0.3;
+	width: 100%;
+	margin-top: 15px;
 }
 
 .modal-content-text.app-settings.gp1,
@@ -5009,6 +5045,27 @@
 	font-weight: 500;
 }
 
+.modal-content-text.app-settings .background-grey {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1px;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 0 3px;
+	background: #E9EBEE;
+	border-radius: 6px;
+}
+
+.modal-content-text.app-settings .bold{
+	font-weight: 600;
+}
+
+.modal-content-text.app-settings ul {
+	list-style-type: disc;
+	padding-left: 15px;
+}
+
 .modal-content-title.app-settings {
 	font-weight: 500;
 	font-size: 14px;
@@ -5016,8 +5073,45 @@
 	color: #000000;
 }
 
+.modal-content-title.app-settings.receiving-events {
+	margin-top: 15px;
+}
+
+.modal-content-title.app-settings.optimization {
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
+
+.modal-content-title.app-settings.optimization.optimization1 {
+	margin-top: 15px;
+}
+
 .modal-content-title.app-settings.gp {
 	margin-top: 20px;
+}
+
+.modal-warning {
+	padding: 5px 10px;
+	background: rgba(255, 198, 114, 0.3);
+	border-radius: 8px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #C58200;
+	width: fit-content;
+}
+
+.modal-warning.xl {
+	width: calc(100% - 20px);
+	display: flex;
+	justify-content: center;
+}
+
+.modal-warning.optimization {
+	margin: 20px 0 10px;
+}
+
+.modal-warning.schering {
+	margin: 15px 0 10px;
 }
 
 .modal-input-container.app-settings {
@@ -5075,6 +5169,22 @@
 
 .modal-content-app-settings-key-button-img {
 	height: 12px;
+}
+
+.modal-content-text.app-settings.schering {
+	margin-top: 15px;
+}
+
+.modal-content-text.app-settings.schering {
+	margin-top: 15px;
+}
+
+.modal-input-container.app-settings.schering-input1 {
+	margin: 0;
+}
+
+.modal-button.app-settings.grey.schering {
+	margin-top: 15px;
 }
 
 .multi-input {

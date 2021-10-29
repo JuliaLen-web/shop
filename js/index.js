@@ -645,6 +645,23 @@ const layoutBanGP = document.getElementsByClassName('modal-layout-ban-gp')[0];
 const closeBanGP = document.querySelector('.modal-layout-ban-gp .modal-close');
 const finishBanGP = document.querySelector('.modal-layout-ban-gp .modal-finish');
 
+const triggerOptimization = document.getElementsByClassName('modal-trigger-optimization')[0];
+const triggerOptimizationMobile = document.getElementsByClassName('modal-trigger-optimization-mobile')[0];
+const layoutOptimization = document.getElementsByClassName('modal-layout-optimization')[0];
+const closeOptimization = document.querySelector('.modal-layout-optimization .modal-close');
+
+const triggerReceivingEvents = document.getElementsByClassName('modal-trigger-receiving-events')[0];
+const triggerReceivingEventsMobile = document.getElementsByClassName('modal-trigger-receiving-events-mobile')[0];
+const layoutReceivingEvents = document.getElementsByClassName('modal-layout-receiving-events ')[0];
+const closeReceivingEvents = document.querySelector('.modal-layout-receiving-events .modal-close');
+const finishReceivingEvents = document.querySelector('.modal-layout-receiving-events .modal-finish');
+
+const triggerSchering = document.getElementsByClassName('modal-trigger-schering')[0];
+const triggerScheringMobile = document.getElementsByClassName('modal-trigger-schering-mobile')[0];
+const layoutSchering = document.getElementsByClassName('modal-layout-schering')[0];
+const closeSchering = document.querySelector('.modal-layout-schering .modal-close');
+const finishSchering = document.querySelector('.modal-layout-schering .modal-finish');
+
 const modals = {
     ...triggerNotAuthorized && layoutNotAuthorized && closeNotAuthorized && openAuth ? {
         notAuthorized: new Modal({
@@ -679,18 +696,42 @@ const modals = {
     } : {},
 
     ...triggerKey && layoutKey && closeKey && triggerKeyMobile ? {
-        bonus: new Modal({
+        key: new Modal({
             triggers: [triggerKey, triggerKeyMobile],
             layout: layoutKey,
             closeTriggers: [closeKey],
        }),
     } : {},
 
-    ...triggerBanGP && layoutBanGP && closeBanGP && finishBanGP ? {
-        bonus: new Modal({
+    ...triggerBanGP && triggerBanGPMobile && layoutBanGP && closeBanGP && finishBanGP ? {
+        banGP: new Modal({
             triggers: [triggerBanGP, triggerBanGPMobile],
             layout: layoutBanGP,
             closeTriggers: [closeBanGP, finishBanGP],
+       }),
+    } : {},
+
+    ...triggerOptimization && triggerOptimizationMobile && layoutOptimization && closeOptimization ? {
+        optimization: new Modal({
+            triggers: [triggerOptimization, triggerOptimizationMobile],
+            layout: layoutOptimization,
+            closeTriggers: [closeOptimization],
+       }),
+    } : {},
+
+    ...triggerReceivingEvents && triggerReceivingEventsMobile && layoutReceivingEvents && closeReceivingEvents && finishReceivingEvents ? {
+        receivingEvents: new Modal({
+            triggers: [triggerReceivingEvents, triggerReceivingEventsMobile],
+            layout: layoutReceivingEvents,
+            closeTriggers: [closeReceivingEvents, finishReceivingEvents],
+       }),
+    } : {},
+
+    ...triggerSchering && triggerScheringMobile && layoutSchering && closeSchering && finishSchering ? {
+        schering: new Modal({
+            triggers: [triggerSchering, triggerScheringMobile],
+            layout: layoutSchering,
+            closeTriggers: [closeSchering, finishSchering],
        }),
     } : {},
 };

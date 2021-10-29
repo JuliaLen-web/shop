@@ -78,6 +78,7 @@
     </div>
   </div>
 </div>
+
 <div class="modal-layout modal-layout-ban-gp">
   <div class="modal">
     <div class="modal-header top ">
@@ -135,6 +136,191 @@
           <img class="modal-content-app-settings-key-button-img" src="../img/copy-blue.svg">
         </button>
       </div>
+
+      <button class="modal-button app-settings blue modal-finish">Сохранить задачу</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-layout modal-layout-optimization">
+  <div class="modal xl">
+    <div class="modal-header top ">
+      <div class="modal-title">Как настроить оптимизацию?</div>
+
+      <button class="modal-close modal-close-button">
+        <img class="modal-close-button-icon" src="../img/close-grey.svg">
+      </button>
+    </div>
+
+    <div class="modal-content app-settings">
+      <div class="modal-content-title app-settings optimization optimization1">Как работает оптимизация</div>
+
+      <div class="modal-content-text app-settings">
+        <span>Чтобы Facebook понял кто сделал </span>
+        <span class="background-grey">DEP</span>
+        <span>или </span> 
+        <span class="background-grey">REG</span>
+        <span>, мы должны сообщить ему это. После получения информация </span>
+        <span>Facebook ищет похожую аудиторию, что оптимизирует стоимость РК.</span>
+      </div>
+
+      <div class="modal-content-title app-settings optimization">Что требуется от вас</div>
+
+      <div class="modal-content-text app-settings">
+        <span>Отправлять нам  ID USER  , что сделал этот юзер: </span>
+        <span class="background-grey">REG</span>
+        <span>или </span> 
+        <span class="background-grey">DEP</span>
+        <span>, сумму которую вы получили за это и валюта: </span>
+        <span class="background-grey">DEP</span>
+        <span>/ </span>
+        <span class="background-grey">REG</span>
+        <span>/ </span>
+        <span class="background-grey">REG</span>
+      </div>
+
+      <div class="modal-content-title app-settings optimization">Что такое ID USER</div>
+
+      <div class="modal-content-text app-settings">
+        <span>
+          При установке каждому пользователю выдаётся уникальный код, например "X999", именно 
+          это значение необходимо отправить, в целевой ссылке DeepLink есть параметры 
+        </span>
+        <span class="background-grey">{SUB1}...{SUB5}</span>
+        <span>, также там есть переменная </span> 
+        <span class="background-grey">{USER}</span>
+        <span>
+          , она и несёт информация ID USER, передавайте как subid в оффер и когда оффер вызовет постбек, 
+          он возвращает все Ваши subid в одном из них вы отправляли subid-юзера, именно этот subid с кодом 
+          пользователя и используйте чтобы отправить постбек на наш сервер.
+        </span>
+      </div>
+
+      <div class="modal-content-title app-settings optimization">Что такое ID USER</div>
+
+      <div class="modal-content-text app-settings">
+        <span>https://CpaStore.ru/api.event?user= </span>
+        <span class="background-grey">IDUSER</span>
+        <span>&currency= </span> 
+        <span class="background-grey">USD</span>
+        <span>&amount= </span> 
+        <span class="background-grey">35.00</span>
+        <span>&event= </span> 
+        <span class="background-grey">DEP</span>
+        <span>&secret=&nbsp;</span>
+        <span class="background-grey"> </span>
+      </div>
+
+      <div class="modal-warning optimization">Важно!</div>
+
+      <div class="modal-content-text app-settings">
+        <ul>
+          <li>Не отправили валюту – используем <span class="bold">USD</span></li>
+          <li>Не отправили сумму – используем <span class="bold">100</span></li>
+          <li>Не отправили event – используем <span class="bold">DEP</span></li>
+          <li>Ошибка ID USER – запрос отменен</li>
+          <li>В Url есть параметр <span class="bold">"secret"</span> - у каждого приложения он свой, ID USER с ним связан! Если <span class="bold">"secret"</span> будет неверным, то запрос будет отменен</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-layout modal-layout-receiving-events">
+  <div class="modal">
+    <div class="modal-header top ">
+      <div class="modal-title">Настройка приема событий</div>
+
+      <button class="modal-close modal-close-button">
+        <img class="modal-close-button-icon" src="../img/close-grey.svg">
+      </button>
+    </div>
+
+    <div class="modal-content app-settings">
+      <div class="modal-content-text app-settings receiving-events">
+        По-умолчанию в параметре PostBack event может быть только DEP и REG, но это не всегда удобно. 
+        Вы можете указать свои значения для event:
+      </div>
+
+      <div class="modal-content-title app-settings receiving-events">Депозит</div>
+
+      <div class="modal-input-container app-settings receiving-events">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-input-container app-settings receiving-events">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <button class="modal-button app-settings grey receiving-events">Добавить депозит</button>
+
+      <div class="modal-receiving-events-separator"></div>
+
+      <div class="modal-content-title app-settings receiving-events">Регистрация</div>
+
+      <div class="modal-input-container app-settings receiving-events">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-input-container app-settings receiving-events">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <button class="modal-button app-settings grey receiving-events">Добавить регистрацию</button>
+
+      <button class="modal-button app-settings blue modal-finish">Сохранить задачу</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-layout modal-layout-schering">
+  <div class="modal">
+    <div class="modal-header top ">
+      <div class="modal-title">Шеринг приложения к рекламному кабинету Facebook</div>
+
+      <button class="modal-close modal-close-button">
+        <img class="modal-close-button-icon" src="../img/close-grey.svg">
+      </button>
+    </div>
+
+    <div class="modal-content app-settings">
+      <div class="modal-content-text app-settings schering">Вносите в каждое поле по одному номеру рекламного кабинета</div>
+
+      <div class="modal-warning schering xl">Процесс шеринга приложения автоматический</div>
+
+      <div class="modal-input-container app-settings schering-input1">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <div class="modal-input-container app-settings">
+        <input class="modal-input app-settings" type="text" placeholder="Input">
+
+        <button class="modal-input-button grey">
+          <img class="modal-input-button-close" src="../img/close-grey.svg">
+        </button>
+      </div>
+
+      <button class="modal-button app-settings grey schering">Добавить поле ввода</button>
 
       <button class="modal-button app-settings blue modal-finish">Сохранить задачу</button>
     </div>
@@ -831,8 +1017,8 @@
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/fb.svg">
           <div class="main__app-settings-title">Оптимизация FB на депозиты / регистрации</div>
-          <button class="main__app-settings-title-button grey">Как настроить?</button>
-          <button class="main__app-settings-title-button blue">Настроить прием событий</button>
+          <button class="main__app-settings-title-button grey modal-trigger-optimization">Как настроить?</button>
+          <button class="main__app-settings-title-button blue modal-trigger-receiving-events">Настроить прием событий</button>
         </div>
 
         <div class="main__app-settings-table">
@@ -864,14 +1050,14 @@
         </div>
 
         <div class="main__app-settings-title-wrapper-button">
-          <button class="main__app-settings-title-button grey mobile">Как настроить?</button>
-          <button class="main__app-settings-title-button blue mobile">Создать рассылку</button>
+          <button class="main__app-settings-title-button grey modal-trigger-optimization-mobile mobile">Как настроить?</button>
+          <button class="main__app-settings-title-button blue modal-trigger-receiving-events-mobile mobile">Создать рассылку</button>
         </div>
 
         <div class="main__app-settings-title-wrapper">
           <img class="main__app-settings-title-img" src="../img/app-settings/sharing.svg">
           <div class="main__app-settings-title">Шаринг приложения к рекламному кабинету</div>
-          <button class="main__app-settings-title-button blue ">Добавить рекламный кабинет(ы)</button>
+          <button class="main__app-settings-title-button blue modal-trigger-schering">Добавить рекламный кабинет(ы)</button>
         </div>
 
         <div class="main__notify error sharing">Бот перестал работать 3 дня назад, сообщите администратору</div>
@@ -1046,7 +1232,7 @@
           </div>
         </div>
 
-        <button class="main__app-settings-title-button blue mobile">Добавить рекламный кабинет</button>
+        <button class="main__app-settings-title-button blue modal-trigger-schering-mobile mobile">Добавить рекламный кабинет</button>
       </div>
     </div>
   </main>
