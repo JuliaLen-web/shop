@@ -862,3 +862,53 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
     })
 }
 
+const dropdownMap = {
+    bitcoin: {
+        icon: 'images/Bitcoin.png',
+        title: 'Bitcoin',
+    },
+    dating: {
+        icon: 'images/Fire.png',
+        title: 'Dating',
+    },
+    betting: {
+        icon: 'images/Ball.png',
+        title: 'Betting',
+    },
+    gambling: {
+        icon: 'images/Casino.png',
+        title: 'Gambling',
+    },
+};
+
+const selectedDropdownValue = 'bitcoin';
+
+const trigger = document.getElementsByClassName('dropdown-trigger')[0];
+const dropdownEl = document.getElementsByClassName('dropdown-wrapper')[0];
+
+const dropdown = new Tooltip({
+    trigger,
+    tooltip: dropdownEl,
+    side: Tooltip.SIDES.BOTTOM,
+    offset: '50%',
+    triangleSettings: {
+        sideWidth: 0,
+    },
+    margin: 5,
+    openEvent: Tooltip.OPEN_EVENTS.CLICK,
+});
+dropdown.listen();
+
+
+const dropdownItems = [...document.getElementsByClassName('dropdown-item')];
+const dropdownTriggerTitle = document.getElementsByClassName('dropdown-trigger-title')[0];
+const dropdownTriggerIcon = document.querySelector('.dropdown-trigger-icon img');
+dropdownItems.forEach((dropdownItem) => {
+    dropdownItem.addEventListener('click', () => {
+        const dropdownValue = dropdownMap[dropdownItem.getAttribute('data-value')];
+        dropdownTriggerTitle.textContent = dropdownValue.title;
+        dropdownTriggerIcon.setAttribute('src', dropdownValue.icon);
+    })
+});
+
+
