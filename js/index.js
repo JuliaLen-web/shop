@@ -630,6 +630,10 @@ const triggerAuth2 = document.getElementsByClassName('modal-trigger-auth-2')[0];
 const layoutAuth2 = document.getElementsByClassName('modal-layout-auth-2')[0];
 const closeAuth2 = document.querySelector('.modal-layout-auth-2 .modal-close');
 
+const triggerApi = document.getElementsByClassName('modal-trigger-api-active')[0];
+const layoutApi = document.getElementsByClassName('modal-layout-api-active')[0];
+const closeApi = document.querySelector('.modal-layout-api-active .modal-close');
+
 const triggerBonus = document.getElementsByClassName('modal-trigger-bonus')[0];
 const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
 const closeBonus = document.querySelector('.modal-layout-bonus .modal-close');
@@ -685,6 +689,14 @@ const modals = {
             layout: layoutAuth2,
             closeTriggers: [closeAuth2],
        }),
+    } : {},
+
+    ...triggerApi && layoutApi && closeApi ? {
+        api: new Modal({
+            triggers: [triggerApi],
+            layout: layoutApi,
+            closeTriggers: [closeApi],
+        }),
     } : {},
 
     ...triggerBonus && layoutBonus && closeBonus ? {
@@ -839,3 +851,14 @@ if (multiInput) {
         });
     })
 }
+
+if (document.querySelector('.main__api-active-form-header-right-top')) {
+    const btnRow = document.querySelectorAll('.main__api-active-form-header-right-top')
+
+    btnRow.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.main__api-active-form').classList.toggle('open')
+        })
+    })
+}
+

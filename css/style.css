@@ -1913,8 +1913,6 @@
 .main__api-active-form-header {
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid rgba(92, 114, 163, 0.08);
-	padding-bottom: 15px;
 }
 
 .main__api-active-form-header-container button {
@@ -1961,10 +1959,9 @@
 
 .main__api-active-form-content {
 	padding-top: 15px;
-}
-
-.main__api-active-form-content {
-	display: flex;
+	margin-top: 15px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(92, 114, 163, 0.08);
 }
 
 .main__api-active-form-post {
@@ -2100,6 +2097,14 @@
 }
 
 .main__api-active-error-id-row {
+	display: flex;
+}
+
+.main__api-active-form-header ~.main__api-active-form-content {
+	display: none;
+}
+
+.main__api-active-form.open .main__api-active-form-header ~.main__api-active-form-content {
 	display: flex;
 }
 
@@ -6582,8 +6587,15 @@ html {
 		margin-bottom: 10px;
 	}
 
+	.main__api-active-subtitle {
+		font-size: 13px;
+		line-height: 17px;
+		letter-spacing: -0.08px;
+		color: rgba(9, 15, 30, 0.8);
+	}
+
 	.main__api-active-title,
-	.main__api-active-form-content,
+	.main__api-active-form.open .main__api-active-form-header ~.main__api-active-form-content,
 	.main__api-active-description {
 		display: none;
 	}
@@ -6591,6 +6603,15 @@ html {
 	.main__api-active-form-header {
 		border: none;
 		position: relative;
+	}
+
+	.main__api-active-form-header-title {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: -0.15px;
+		padding-right: 25px;
+		box-sizing: border-box;
 	}
 
 	.main__api-active-form-header-img {
@@ -7057,5 +7078,126 @@ html {
 	.main__bonuses,
 	.main__section {
 		margin-top: 20px;
+	}
+
+	.main__api-active-form-header-right {
+		width: 100%;
+	}
+
+	.modal-layout-sheets {
+		align-items: flex-end;
+		padding: 0;
+	}
+
+	.modal-layout-sheets .modal {
+		max-width: 100vw;
+		max-height: 80vh;
+		width: 100%;
+		transform: translate(0, 100%);
+		transition: transform .3s;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		border-radius: 20px 20px 0 0;
+	}
+
+	.modal-layout-sheets.opened .modal {
+		transform: translate(0, 0);
+		transition: transform .3s;
+	}
+
+	.modal-layout-sheets .modal-close {
+		background: rgba(151, 174, 225, 0.2);
+		border-radius: 3px;
+		position: absolute;
+		width: 40px;
+		height: 5px;
+		left: calc(50% - 40px/2);
+		top: 5px;
+	}
+
+	.modal-layout-sheets .main__back-link-mobile {
+		position: absolute;
+		left: 10px;
+		top: 27px;
+	}
+
+	.modal-layout-sheets .modal-header {
+		border-bottom: 1px solid rgba(151, 174, 225, 0.2);
+	}
+
+	.modal-layout-sheets .modal-header-title {
+		text-align: center;
+		margin: 5px auto 10px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.modal-layout-sheets .modal-content {
+		max-height: 77vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-bottom: 115px;
+		box-sizing: border-box;
+	}
+
+	.modal-layout-sheets  .main__api-active-form-content {
+		border: none;
+		margin-top: 10px;
+		padding-top: 0;
+	}
+
+	.modal-layout-sheets .modal-content .main__api-active-form-content,
+	.modal-layout-sheets .modal-content .main__api-active-description {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.modal-layout-sheets .modal-footer {
+		padding: 0 20px;
+		box-sizing: border-box;
+		position: fixed;
+		bottom: 0;
+		background: #FFFFFF;
+		width: 100%;
+	}
+
+	.modal-layout-sheets .modal-footer:before {
+		position: absolute;
+		content: "";
+		top: -40px;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 82%);
+	}
+
+	.modal-layout-sheets .main__api-active-form-button {
+		display: none;
+	}
+
+	.modal-layout-sheets .modal-footer .main__api-active-form-button {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	.modal-layout-sheets .modal-content .main__api-active-form-right-content {
+		min-height: 300px;
+		align-items: flex-start;
+	}
+
+	.modal-layout-sheets .modal-content .main__api-active-form-left,
+	.modal-layout-sheets .modal-content .main__api-active-form-right {
+		width: 100%;
+		min-width: auto;
+		margin-right: 0;
+	}
+
+	.modal-layout-sheets .main__api-active-form-post {
+		width: 100%;
+		text-align: center;
+		background: rgba(26, 136, 243, 0.1);
+		box-sizing: border-box;
 	}
 }
