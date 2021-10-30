@@ -7524,6 +7524,38 @@ html {
 		border-radius: 12px;
 		background: #fff;
 		width: calc(100% - 31px);
+		z-index: 2;
+	}
+
+	.main__payment-column.min-sum,
+	.main__payment-column.rate.bitcoin{
+		text-align: left;
+		margin: 15px 0 0;
+	}
+
+	.main__payment-mobile .main__payment-description,
+	.main__payment-mobile .main__payment-form,
+	.main__payment-mobile .main__payment-wallet-wrapper {
+		display: flex;
+	}
+
+	.main__payment-mobile .main__payment-form,
+	.main__payment-mobile .main__payment-wallet-wrapper,
+	.main__payment-mobile .main__payment-form-input-wrapper {
+		flex-wrap: wrap;
+	}
+
+	.main__payment-mobile .main__payment-button,
+	.main__payment-mobile .main__payment-form-text {
+		width: 100%;
+	}
+
+	.main__payment-mobile .main__input {
+		margin-bottom: 15px;
+	}
+
+	.main__payment-mobile .main__payment-wallet {
+		margin-left: 0;
 	}
 
 
