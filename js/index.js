@@ -880,6 +880,24 @@ const dropdownMap = {
         title: 'Gambling',
     },
 };
+const dropdownMap = {
+    bitcoin: {
+        icon: 'images/Bitcoin.png',
+        title: 'Bitcoin',
+    },
+    dating: {
+        icon: 'images/Fire.png',
+        title: 'Dating',
+    },
+    betting: {
+        icon: 'images/Ball.png',
+        title: 'Betting',
+    },
+    gambling: {
+        icon: 'images/Casino.png',
+        title: 'Gambling',
+    },
+};
 
 const selectedDropdownValue = 'bitcoin';
 
@@ -910,5 +928,3 @@ dropdownItems.forEach((dropdownItem) => {
         dropdownTriggerIcon.setAttribute('src', dropdownValue.icon);
     })
 });
-
-

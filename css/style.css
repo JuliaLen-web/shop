@@ -5225,6 +5225,165 @@
 	display: none;
 }
 
+
+.main__payment-mobile {
+	display: none;
+}
+
+.dropdown-trigger {
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+	position: absolute;
+	cursor: pointer;
+	background-color: rgba(151, 174, 225, 0.11);
+	border-radius: 12px;
+	left: 500px;
+	top: 300px;
+	width: 150px;
+}
+
+.dropdown-trigger-content {
+	display: flex;
+	align-items: center;
+}
+
+.dropdown-trigger-icon {
+	display: flex;
+}
+
+.dropdown-trigger-icon img {
+	width: 15px;
+	height: 15px;
+}
+
+.dropdown-trigger-title {
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+.dropdown-trigger .dropdown-trigger-angle {
+	font-size: 9px;
+	margin-left: 5px;
+	transition: transform .3s ease;
+}
+
+.dropdown-trigger.opened .dropdown-trigger-angle {
+	transform: rotate(180deg);
+}
+
+.dropdown-wrapper {
+	position: absolute;
+	display: none;
+	cursor: auto;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease;
+	width: 100%;
+}
+
+.dropdown-trigger.displayed .dropdown-wrapper {
+	display: flex;
+}
+
+.dropdown-trigger.opened .dropdown-wrapper {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dropdown {
+	width: 100%;
+	max-height: 100px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 6px 3px;
+	overflow: auto;
+}
+
+.dropdown-item {
+	display: flex;
+	padding: 5px 10px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.dropdown-item:hover {
+	background: rgba(224, 229, 240, 0.5);
+}
+
+.dropdown-item-icon {
+	display: flex;
+	width: 15px;
+}
+
+.dropdown-item-icon img {
+	max-width: 15px;
+	max-height: 15px;
+}
+
+.dropdown-item-title {
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.tooltip-triangle-wrapper {
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tooltip-triangle {
+	position: absolute;
+}
+
+.tooltip-triangle.theme-default {
+	background-color: #fff;
+	/*
+    border-bottom-left-radius - это радиус угла треугольника, который направлен на триггер
+    border-bottom-right-radius и border-top-left-radius - это радиусы углов треугольника, которые прилегают к тултипу
+    */
+	border-bottom-left-radius: 1px;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+	/*
+    сейчас треугольник под тултипом и если на тултипе есть тень, то треугольник в тени.
+    чтобы треугольник был выше тултипа, нужно поставить z-index: 1;
+    */
+}
+
+.tooltip-triangle.theme-red {
+	background-color: #f00;
+	border-bottom-left-radius: 4px;
+}
+
+.tooltip-triangle.theme-default-upper-tooltip {
+	background-color: #fff;
+	border-bottom-left-radius: 1px;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+.tooltip-triangle.theme-gradient {
+	background-image: linear-gradient(45deg, rgba(255,250,0,1) 0%, rgba(255,0,0,1) 24%, rgba(57,213,31,1) 48%, rgba(0,212,255,1) 71%);
+	border-bottom-left-radius: 4px;
+	z-index: 1;
+}
+
+.tooltip-triangle.theme-black-rounded {
+	background-color: #000;
+	border-bottom-left-radius: 100px;
+}
+
+
 html,
 body,
 p,
@@ -7294,163 +7453,39 @@ html {
 	.main__payment-history-table-line .main__payment-history-table-column-1.bitcoin {
 		color: #5C72A3;
 	}
+
+	.main__payment-mobile {
+		display: flex;
+	}
+
+	.main__app-settings-table-column,
+	.main__app-settings-table-column.push .red {
+		font-size: 11px;
+		line-height: 13px;
+	}
+
+	.main__app-settings-table-column.push .red {
+		flex: 1;
+	}
+
+	.main__app-settings-table-column.main__app-settings-table-column-6.push{
+		flex-basis: 100%;
+		justify-content: flex-end;
+	}
+
+	.main__app-settings-table-line-container:nth-child(2) {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+	}
+
+	.main__app-settings-table-line-container:nth-child(2) .main__app-settings-table-column,
+	.main__app-settings-table-column.push .red {
+		text-align: right;
+	}
+
+	.main__app-settings-table-column.deep-links-span .main__app-settings-table-column-button {
+		margin: 0;
+	}
+
 }
-
-.main__payment-mobile {
-	display: none;
-}
-
-.dropdown-trigger {
-	padding: 10px 15px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 13px;
-	position: absolute;
-	cursor: pointer;
-	background-color: rgba(151, 174, 225, 0.11);
-	border-radius: 12px;
-	left: 500px;
-	top: 300px;
-	width: 150px;
-}
-
-.dropdown-trigger-content {
-	display: flex;
-	align-items: center;
-}
-
-.dropdown-trigger-icon {
-	display: flex;
-}
-
-.dropdown-trigger-icon img {
-	width: 15px;
-	height: 15px;
-}
-
-.dropdown-trigger-title {
-	margin-left: 10px;
-	font-size: 13px;
-}
-
-.dropdown-trigger .dropdown-trigger-angle {
-	font-size: 9px;
-	margin-left: 5px;
-	transition: transform .3s ease;
-}
-
-.dropdown-trigger.opened .dropdown-trigger-angle {
-	transform: rotate(180deg);
-}
-
-.dropdown-wrapper {
-	position: absolute;
-	display: none;
-	cursor: auto;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity .3s ease;
-	width: 100%;
-}
-
-.dropdown-trigger.displayed .dropdown-wrapper {
-	display: flex;
-}
-
-.dropdown-trigger.opened .dropdown-wrapper {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.dropdown {
-	width: 100%;
-	max-height: 100px;
-	display: flex;
-	flex-direction: column;
-	background-color: #fff;
-	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
-	padding: 6px 3px;
-	overflow: auto;
-}
-
-.dropdown-item {
-	display: flex;
-	padding: 5px 10px;
-	border-radius: 6px;
-	cursor: pointer;
-}
-
-.dropdown-item:hover {
-	background: rgba(224, 229, 240, 0.5);
-}
-
-.dropdown-item-icon {
-	display: flex;
-	width: 15px;
-}
-
-.dropdown-item-icon img {
-	max-width: 15px;
-	max-height: 15px;
-}
-
-.dropdown-item-title {
-	font-size: 13px;
-	margin-left: 10px;
-}
-
-.tooltip-triangle-wrapper {
-	position: absolute;
-	overflow: hidden;
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity .3s ease;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.tooltip-triangle {
-	position: absolute;
-}
-
-.tooltip-triangle.theme-default {
-	background-color: #fff;
-	/*
-    border-bottom-left-radius - это радиус угла треугольника, который направлен на триггер
-    border-bottom-right-radius и border-top-left-radius - это радиусы углов треугольника, которые прилегают к тултипу
-    */
-	border-bottom-left-radius: 1px;
-	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
-	/*
-    сейчас треугольник под тултипом и если на тултипе есть тень, то треугольник в тени.
-    чтобы треугольник был выше тултипа, нужно поставить z-index: 1;
-    */
-}
-
-.tooltip-triangle.theme-red {
-	background-color: #f00;
-	border-bottom-left-radius: 4px;
-}
-
-.tooltip-triangle.theme-default-upper-tooltip {
-	background-color: #fff;
-	border-bottom-left-radius: 1px;
-	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1);
-	z-index: 1;
-}
-
-.tooltip-triangle.theme-gradient {
-	background-image: linear-gradient(45deg, rgba(255,250,0,1) 0%, rgba(255,0,0,1) 24%, rgba(57,213,31,1) 48%, rgba(0,212,255,1) 71%);
-	border-bottom-left-radius: 4px;
-	z-index: 1;
-}
-
-.tooltip-triangle.theme-black-rounded {
-	background-color: #000;
-	border-bottom-left-radius: 100px;
-}
-
-
