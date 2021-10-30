@@ -864,37 +864,19 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
 
 const dropdownMap = {
     bitcoin: {
-        icon: 'images/Bitcoin.png',
+        icon: '../img/payments/bitcoin.svg',
         title: 'Bitcoin',
     },
     dating: {
-        icon: 'images/Fire.png',
+        icon: '../img/dropdown/fire.svg',
         title: 'Dating',
     },
     betting: {
-        icon: 'images/Ball.png',
+        icon: '../img/dropdown/footbal.svg',
         title: 'Betting',
     },
     gambling: {
-        icon: 'images/Casino.png',
-        title: 'Gambling',
-    },
-};
-const dropdownMap = {
-    bitcoin: {
-        icon: 'images/Bitcoin.png',
-        title: 'Bitcoin',
-    },
-    dating: {
-        icon: 'images/Fire.png',
-        title: 'Dating',
-    },
-    betting: {
-        icon: 'images/Ball.png',
-        title: 'Betting',
-    },
-    gambling: {
-        icon: 'images/Casino.png',
+        icon: '../img/dropdown/casino.svg',
         title: 'Gambling',
     },
 };
@@ -913,7 +895,7 @@ const dropdown = new Tooltip({
         sideWidth: 0,
     },
     margin: 5,
-    openEvent: Tooltip.OPEN_EVENTS.CLICK,
+    openEvent: Tooltip.OPEN_EVENTS,
 });
 dropdown.listen();
 

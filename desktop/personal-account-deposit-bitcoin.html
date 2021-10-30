@@ -157,7 +157,7 @@
     </div>
   </nav>
   <main class="main">
-    <div class="main__content">
+    <div class="main__content main__content_menu">
       <div class="main__title">Пополнение</div>
 
       <div class="main__nav-personal my-app">
@@ -240,33 +240,66 @@
       </div>
 
       <div class="main__payment-mobile">
-        <div class="dropdown-trigger">
-          <div class="dropdown-trigger-content">
-            <div class="dropdown-trigger-icon"><img src="images/Bitcoin.png" alt="Bitcoin"></div>
-            <div class="dropdown-trigger-title">Bitcoin</div>
-          </div>
-          <div class="dropdown-trigger-angle">▼</div>
+        <div class="main__payment-mobile-drop">
+          <div class="dropdown-trigger">
+            <div class="dropdown-trigger-content">
+              <div class="dropdown-trigger-icon"><img src="../img/dropdown/bitcoin.svg" alt="Bitcoin"></div>
+              <div class="dropdown-trigger-title">Bitcoin</div>
+            </div>
+            <div class="dropdown-trigger-angle">▼</div>
 
-          <div class="dropdown-wrapper">
-            <div class="dropdown">
-              <div class="dropdown-item" data-value="bitcoin">
-                <div class="dropdown-item-icon"><img src="../img/dropdown/bitcoin.svg" alt="Bitcoin"></div>
-                <div class="dropdown-item-title">Bitcoin</div>
-              </div>
-              <div class="dropdown-item" data-value="dating">
-                <div class="dropdown-item-icon"><img src="../img/dropdown/fire.svg" alt="Dating"></div>
-                <div class="dropdown-item-title">Dating</div>
-              </div>
-              <div class="dropdown-item" data-value="betting">
-                <div class="dropdown-item-icon"><img src="../img/dropdown/footbal.svg" alt="Betting"></div>
-                <div class="dropdown-item-title">Betting</div>
-              </div>
-              <div class="dropdown-item" data-value="gambling">
-                <div class="dropdown-item-icon"><img src="../img/dropdown/casino.svg" alt="Gambling"></div>
-                <div class="dropdown-item-title">Gambling</div>
+            <div class="dropdown-wrapper">
+              <div class="dropdown">
+                <div class="dropdown-item" data-value="bitcoin">
+                  <div class="dropdown-item-icon"><img src="../img/dropdown/bitcoin.svg" alt="Bitcoin"></div>
+                  <div class="dropdown-item-title">Bitcoin</div>
+                </div>
+                <div class="dropdown-item" data-value="dating">
+                  <div class="dropdown-item-icon"><img src="../img/dropdown/fire.svg" alt="Dating"></div>
+                  <div class="dropdown-item-title">Dating</div>
+                </div>
+                <div class="dropdown-item" data-value="betting">
+                  <div class="dropdown-item-icon"><img src="../img/dropdown/footbal.svg" alt="Betting"></div>
+                  <div class="dropdown-item-title">Betting</div>
+                </div>
+                <div class="dropdown-item" data-value="gambling">
+                  <div class="dropdown-item-icon"><img src="../img/dropdown/casino.svg" alt="Gambling"></div>
+                  <div class="dropdown-item-title">Gambling</div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="main__payment-form blue">
+          <div class="main__payment-form-title bitcoin">Ваш Bitcoin-кошелек</div>
+          <div class="main__payment-form-text">По нему мы определим когда деньги придут именно от вас</div>
+          <div class="main__payment-form-input-wrapper">
+            <input class="main__input" type="text" placeholder="input">
+            <button class="main__payment-button blue">Сохранить</button>
+          </div>
+        </div>
+        <div class="main__payment-wallet-wrapper">
+          <div class="main__payment-wallet-text">Bitcoin-кошелек для пополнения</div>
+          <div class="main__payment-wallet">3NkAQmLMSrDXDgaVFBoAGV985i7zi6wj5u</div>
+          <div class="main__payment-wallet-ok">
+            <img class="main__payment-wallet-ok-icon" src="../img/ok-grey.svg">
+          </div>
+        </div>
+        <div class="main__payment-description">
+          Курс Bitcoin обновляется каждые 10 минут<br>
+          Сумма Вашего пополнения будет зачислена и сконвертирована после 2-х подтверждений сети Bitcoin, обычно это
+          происходит в течении часа после перевода средств.<br>
+          Сама операция отобразится тут через минуту после перевода средств и будет показан прогресс подтверждения
+          перевода.<br>
+        </div>
+
+        <div class="main__payment-column min-sum">
+          <div class="main__payment-column-title">Минимальная сумма</div>
+          <div class="main__payment-column-text">0.00010000 BTC</div>
+        </div>
+        <div class="main__payment-column rate bitcoin">
+          <div class="main__payment-column-title">Курс пополнения</div>
+          <div class="main__payment-column-text">1 BTC = $31783.77 / 2432304.62₽</div>
         </div>
 
       </div>
