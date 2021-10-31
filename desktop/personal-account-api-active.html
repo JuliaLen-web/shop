@@ -249,7 +249,7 @@
                 <div class="main__api-active-form-header-text">Метод для получения инфорамции о состоянии баланса
                   личного кабинета
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-2 modal-open-api-active-2">Выполнить</button>
               </div>
             </div>
 
@@ -302,7 +302,7 @@
                 <div class="main__api-active-form-header-text">Метод для получения списка арендованных / купленных /
                   забронированных приложений
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-3 modal-open-api-active-3">Выполнить</button>
               </div>
             </div>
 
@@ -361,7 +361,7 @@
                 <div class="main__api-active-form-header-text">Метод для получения списка созданных на приложении
                   диплинков
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-4 modal-open-api-active-4">Выполнить</button>
               </div>
             </div>
 
@@ -425,7 +425,7 @@
               </div>
               <div class="main__api-active-form-header-container">
                 <div class="main__api-active-form-header-text">Метод для создания диплинка для прилолжения</div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-5 modal-open-api-active-5">Выполнить</button>
               </div>
             </div>
 
@@ -518,7 +518,7 @@
                 <div class="main__api-active-form-header-text">Метод для получения списка созданных на приложении
                   Push-рассылок
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-6 modal-open-api-active-6">Выполнить</button>
               </div>
             </div>
 
@@ -586,7 +586,7 @@
               </div>
               <div class="main__api-active-form-header-container">
                 <div class="main__api-active-form-header-text">Метод для создания Push-рассылки для прилолжения</div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-7 modal-open-api-active-7">Выполнить</button>
               </div>
             </div>
 
@@ -689,7 +689,7 @@
                 <div class="main__api-active-form-header-text">Метод для архивации рассылки, если рассылка ещё не
                   выполнялась, то она и не будет выполнена, будет отменена
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-8 modal-open-api-active-8">Выполнить</button>
               </div>
             </div>
 
@@ -753,7 +753,7 @@
                 <div class="main__api-active-form-header-text">Метод для получения списка прикреплённых к прилке
                   рекламных кабинетов Facebook
                 </div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-9 modal-open-api-active-9">Выполнить</button>
               </div>
             </div>
 
@@ -821,7 +821,7 @@
               </div>
               <div class="main__api-active-form-header-container">
                 <div class="main__api-active-form-header-text">Метод для шеринга РК Facebook к приложению</div>
-                <button class="main__api-active-form-button">Выполнить</button>
+                <button class="main__api-active-form-button modal-trigger-api-active-10 modal-open-api-active-10">Выполнить</button>
               </div>
             </div>
 
@@ -1125,53 +1125,6 @@
 </div>
 
 <div class="modal-layout modal-layout-sheets modal-layout-api-active">
-  <div class="modal">
-    <div class="modal-header">
-      <span class="modal-header-button modal-close"></span>
-      <a class="main__back-link-mobile" href="javascript:">Назад</a>
-      <div class="modal-header-title">Проверка API-ключа</div>
-    </div>
-
-    <div class="modal-content">
-      <div class="main__api-active-form-content">
-        <div class="main__api-active-form-left">
-          <div class="main__api-active-form-post">GET | POST</div>
-
-          <div class="main__api-active-form-input-container">
-            <div class="main__api-active-form-input-title">apikey</div>
-            <div class="main__api-active-form-input-subtitle">Ключ доступа к API</div>
-            <input class="main__input api-active" type="text">
-          </div>
-
-          <div class="main__api-active-form-input-container">
-            <div class="main__api-active-form-input-title">Version</div>
-            <div class="main__api-active-form-input-subtitle">Используемая версия API</div>
-            <input class="main__input api-active" type="text" value="1.0">
-          </div>
-          <button class="main__api-active-form-button">Выполнить</button>
-        </div>
-
-        <div class="main__api-active-form-right">
-          <div class="main__api-active-form-right-content">
-            <span>https://cpastore.ru/</span>
-            <span class="bold">api.check_token</span>
-            <img class="main__api-active-form-right-img" src="../img/copy-blue.svg">
-          </div>
-        </div>
-      </div>
-      <div class="main__api-active-description">
-        status="success" - Ключ в рабочем состоянии, запрос составлен верно<br>
-        status="error" - В запросе есть ошибки, смотрите error_id<br>
-        status="ban" - Ключ был заблокирован за нарушение правил, смотрите ban_reason
-      </div>
-    </div>
-
-    <div class="modal-footer">
-      <button class="main__api-active-form-button">Выполнить</button>
-    </div>
-  </div>
-</div>
-<div class="modal-layout modal-layout-sheets modal-layout-api-active-1">
   <div class="modal">
     <div class="modal-header">
       <span class="modal-header-button modal-close"></span>
@@ -1594,7 +1547,7 @@
     </div>
   </div>
 </div>
-<div class="modal-layout modal-layout-sheets modal-layout-api-active10">
+<div class="modal-layout modal-layout-sheets modal-layout-api-active-10">
   <div class="modal">
     <div class="modal-header">
       <span class="modal-header-button modal-close"></span>

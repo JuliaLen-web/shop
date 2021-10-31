@@ -634,6 +634,42 @@ const triggerApi = document.getElementsByClassName('modal-trigger-api-active')[0
 const layoutApi = document.getElementsByClassName('modal-layout-api-active')[0];
 const closeApi = document.querySelector('.modal-layout-api-active .modal-close');
 
+const triggerApi2 = document.getElementsByClassName('modal-trigger-api-active-2')[0];
+const layoutApi2 = document.getElementsByClassName('modal-layout-api-active-2')[0];
+const closeApi2 = document.querySelector('.modal-layout-api-active-2 .modal-close');
+
+const triggerApi3 = document.getElementsByClassName('modal-trigger-api-active-3')[0];
+const layoutApi3 = document.getElementsByClassName('modal-layout-api-active-3')[0];
+const closeApi3 = document.querySelector('.modal-layout-api-active-3 .modal-close');
+
+const triggerApi4 = document.getElementsByClassName('modal-trigger-api-active-4')[0];
+const layoutApi4 = document.getElementsByClassName('modal-layout-api-active-4')[0];
+const closeApi4 = document.querySelector('.modal-layout-api-active-4 .modal-close');
+
+const triggerApi5 = document.getElementsByClassName('modal-trigger-api-active-5')[0];
+const layoutApi5 = document.getElementsByClassName('modal-layout-api-active-5')[0];
+const closeApi5 = document.querySelector('.modal-layout-api-active-5 .modal-close');
+
+const triggerApi6 = document.getElementsByClassName('modal-trigger-api-active-6')[0];
+const layoutApi6 = document.getElementsByClassName('modal-layout-api-active-6')[0];
+const closeApi6 = document.querySelector('.modal-layout-api-active-6 .modal-close');
+
+const triggerApi7 = document.getElementsByClassName('modal-trigger-api-active-7')[0];
+const layoutApi7 = document.getElementsByClassName('modal-layout-api-active-7')[0];
+const closeApi7 = document.querySelector('.modal-layout-api-active-7 .modal-close');
+
+const triggerApi8 = document.getElementsByClassName('modal-trigger-api-active-8')[0];
+const layoutApi8 = document.getElementsByClassName('modal-layout-api-active-8')[0];
+const closeApi8 = document.querySelector('.modal-layout-api-active-8 .modal-close');
+
+const triggerApi9 = document.getElementsByClassName('modal-trigger-api-active-9')[0];
+const layoutApi9 = document.getElementsByClassName('modal-layout-api-active-9')[0];
+const closeApi9 = document.querySelector('.modal-layout-api-active-9 .modal-close');
+
+const triggerApi10 = document.getElementsByClassName('modal-trigger-api-active-10')[0];
+const layoutApi10 = document.getElementsByClassName('modal-layout-api-active-10')[0];
+const closeApi10 = document.querySelector('.modal-layout-api-active-10 .modal-close');
+
 const triggerBasket = document.getElementsByClassName('modal-trigger-basket')[0];
 const layoutBasket = document.getElementsByClassName('modal-layout-basket')[0];
 const closeBasket = document.querySelector('.modal-layout-basket .modal-close');
@@ -700,6 +736,78 @@ const modals = {
             triggers: [triggerApi],
             layout: layoutApi,
             closeTriggers: [closeApi],
+        }),
+    } : {},
+
+    ...triggerApi2 && layoutApi2 && closeApi2 ? {
+        api2: new Modal({
+            triggers: [triggerApi2],
+            layout: layoutApi2,
+            closeTriggers: [closeApi2],
+        }),
+    } : {},
+
+    ...triggerApi3 && layoutApi3 && closeApi3 ? {
+        api3: new Modal({
+            triggers: [triggerApi3],
+            layout: layoutApi3,
+            closeTriggers: [closeApi3],
+        }),
+    } : {},
+
+    ...triggerApi4 && layoutApi4 && closeApi4 ? {
+        api4: new Modal({
+            triggers: [triggerApi4],
+            layout: layoutApi4,
+            closeTriggers: [closeApi4],
+        }),
+    } : {},
+
+    ...triggerApi5 && layoutApi5 && closeApi5 ? {
+        api5: new Modal({
+            triggers: [triggerApi5],
+            layout: layoutApi5,
+            closeTriggers: [closeApi5],
+        }),
+    } : {},
+
+    ...triggerApi6 && layoutApi6 && closeApi6 ? {
+        api6: new Modal({
+            triggers: [triggerApi6],
+            layout: layoutApi6,
+            closeTriggers: [closeApi6],
+        }),
+    } : {},
+
+    ...triggerApi7 && layoutApi7 && closeApi7 ? {
+        api7: new Modal({
+            triggers: [triggerApi7],
+            layout: layoutApi7,
+            closeTriggers: [closeApi7],
+        }),
+    } : {},
+
+    ...triggerApi8 && layoutApi8 && closeApi8 ? {
+        api8: new Modal({
+            triggers: [triggerApi8],
+            layout: layoutApi8,
+            closeTriggers: [closeApi8],
+        }),
+    } : {},
+
+    ...triggerApi9 && layoutApi9 && closeApi9 ? {
+        api9: new Modal({
+            triggers: [triggerApi9],
+            layout: layoutApi9,
+            closeTriggers: [closeApi9],
+        }),
+    } : {},
+
+    ...triggerApi10 && layoutApi10 && closeApi10 ? {
+        api10: new Modal({
+            triggers: [triggerApi10],
+            layout: layoutApi10,
+            closeTriggers: [closeApi10],
         }),
     } : {},
 
@@ -870,6 +978,16 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
     btnRow.forEach(btn => {
         btn.addEventListener('click', () => {
             btn.closest('.main__api-active-form').classList.toggle('open')
+        })
+    })
+}
+
+if (document.querySelector('.main__api-active-error-id')) {
+    const btnRow = document.querySelectorAll('.main__api-active-error-id')
+
+    btnRow.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.main__api-active-error-id').classList.toggle('active')
         })
     })
 }
