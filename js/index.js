@@ -865,28 +865,23 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
 const dropdownMap = {
     bitcoin: {
         icon: '../img/payments/bitcoin.svg',
-        title: 'Bitcoin',
-        iconClass: 'bitcoin'
+        title: 'Bitcoin'
     },
     ymoney: {
         icon: '../img/payments/ymoney.svg',
-        title: 'ЮMoney',
-        iconClass: 'ymoney'
+        title: 'ЮMoney'
     },
     webmoney: {
         icon: '../img/payments/webmoney.svg',
-        title: 'WebMoney',
-        iconClass: 'webmoney'
+        title: 'WebMoney'
     },
     kiwi: {
         icon: '../img/payments/qiwi.svg',
-        title: `Qiwi`,
-        iconClass: 'qiwi'
+        title: `Qiwi`
     },
     card: {
         icon: '../img/payments/card.svg',
-        title: 'Card',
-        iconClass: 'card'
+        title: 'Card'
     }
 };
 
@@ -912,12 +907,10 @@ dropdown.listen();
 const dropdownItems = [...document.getElementsByClassName('dropdown-item')];
 const dropdownTriggerTitle = document.getElementsByClassName('dropdown-trigger-title')[0];
 const dropdownTriggerIcon = document.querySelector('.dropdown-trigger-icon img');
-const dropdownIconClass = document.getElementsByClassName('dropdown-trigger-icon');
 dropdownItems.forEach((dropdownItem) => {
     dropdownItem.addEventListener('click', () => {
         const dropdownValue = dropdownMap[dropdownItem.getAttribute('data-value')];
         dropdownTriggerTitle.textContent = dropdownValue.title;
         dropdownTriggerIcon.setAttribute('src', dropdownValue.icon);
-        dropdownIconClass.classList.add(dropdownValue.iconClass);
     })
 });
