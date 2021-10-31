@@ -2630,14 +2630,28 @@
 	margin-top: 50px;
 }
 
-.main__applications-header-dropdown {
-	background: rgba(151, 174, 225, 0.11);
-	border-radius: 12px;
-	display: flex;
-	align-items: center;
-	height: 35px;
-	padding: 0 15px;
-	cursor: pointer;
+.main__applications-header-dropdown .dropdown-trigger {
+	position: relative;
+	min-width: 150px;
+	width: auto;
+}
+
+.main__applications-header-dropdown .dropdown {
+	background: #F4F6FC;
+	border-radius: 8px;
+	z-index: 3;
+}
+
+.main__applications-header-dropdown .dropdown-wrapper {
+	z-index: 3;
+}
+
+.main__applications-header-dropdown .dropdown-item-title,
+.main__applications-header-dropdown .dropdown-trigger-title {
+	font-size: 13px;
+	line-height: 17px;
+	letter-spacing: -0.08px;
+	color: rgba(92, 114, 163, 0.8);
 }
 
 .main__applications-header-dropdown.type {
@@ -2662,7 +2676,6 @@
 
 .main__applications-header-dropdown-chevron {
 	height: 8px;
-	margin-left: 24px;
 }
 
 .main__payment-cards {

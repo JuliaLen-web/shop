@@ -874,7 +874,7 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
     })
 }
 
-const dropdownMap = {
+const dropdownMapPayment = {
     bitcoin: {
         icon: '../img/dropdown/mobile/bitcoin-bg.svg',
         title: 'Bitcoin'
@@ -899,30 +899,122 @@ const dropdownMap = {
 
 const selectedDropdownValue = 'bitcoin';
 
-const trigger = document.getElementsByClassName('dropdown-trigger')[0];
-const dropdownEl = document.getElementsByClassName('dropdown-wrapper')[0];
+const triggerPayment = document.getElementsByClassName('dropdown-trigger-payment')[0];
+const dropdownElPayment = document.getElementsByClassName('dropdown-wrapper-payment')[0];
 
-const dropdown = new Tooltip({
-    trigger,
-    tooltip: dropdownEl,
-    side: Tooltip.SIDES.BOTTOM,
-    offset: '50%',
-    triangleSettings: {
-        sideWidth: 0,
+if (triggerPayment && dropdownElPayment) {
+    const dropdownPayment = new Tooltip({
+        trigger: triggerPayment,
+        tooltip: dropdownElPayment,
+        side: Tooltip.SIDES.BOTTOM,
+        offset: '50%',
+        triangleSettings: {
+            sideWidth: 0,
+        },
+        margin: 5,
+        openEvent: Tooltip.OPEN_EVENTS,
+    });
+    dropdownPayment.listen();
+
+
+    const dropdownItemsPayment = [...document.getElementsByClassName('dropdown-item-payment')];
+    const dropdownTriggerTitlePayment = document.getElementsByClassName('dropdown-trigger-title-payment')[0];
+    const dropdownTriggerIconPayment = document.querySelector('.dropdown-trigger-icon-payment img');
+    dropdownItemsPayment.forEach((dropdownItem) => {
+        dropdownItem.addEventListener('click', () => {
+            const dropdownValuePayment = dropdownMapPayment[dropdownItem.getAttribute('data-value')];
+            dropdownTriggerTitlePayment.textContent = dropdownValuePayment.title;
+            dropdownTriggerIconPayment.setAttribute('src', dropdownValuePayment.icon);
+        })
+    });
+}
+
+const dropdownMapAppType = {
+    Bitcoin: {
+        icon: '../img/dropdown/bitcoin.svg',
+        title: 'Bitcoin'
     },
-    margin: 5,
-    openEvent: Tooltip.OPEN_EVENTS,
-});
-dropdown.listen();
+    Dating: {
+        icon: '../img/dropdown/fire.svg',
+        title: 'Dating'
+    },
+    Betting: {
+        icon: '../img/dropdown/footbal.svg',
+        title: 'Betting'
+    },
+    Gambling: {
+        icon: '../img/dropdown/casino.svg',
+        title: `Gambling`
+    },
+};
+
+const triggerAppType = document.getElementsByClassName('dropdown-trigger-app-type')[0];
+const dropdownElAppType = document.getElementsByClassName('dropdown-wrapper-app-type')[0];
+
+if (triggerAppType && dropdownElAppType) {
+    const dropdownAppType = new Tooltip({
+        trigger: triggerAppType,
+        tooltip: dropdownElAppType,
+        side: Tooltip.SIDES.BOTTOM,
+        offset: '50%',
+        triangleSettings: {
+            sideWidth: 0,
+        },
+        margin: 5,
+        openEvent: Tooltip.OPEN_EVENTS,
+    });
+    dropdownAppType.listen();
 
 
-const dropdownItems = [...document.getElementsByClassName('dropdown-item')];
-const dropdownTriggerTitle = document.getElementsByClassName('dropdown-trigger-title')[0];
-const dropdownTriggerIcon = document.querySelector('.dropdown-trigger-icon img');
-dropdownItems.forEach((dropdownItem) => {
-    dropdownItem.addEventListener('click', () => {
-        const dropdownValue = dropdownMap[dropdownItem.getAttribute('data-value')];
-        dropdownTriggerTitle.textContent = dropdownValue.title;
-        dropdownTriggerIcon.setAttribute('src', dropdownValue.icon);
-    })
-});
+    const dropdownItemsAppType = [...document.getElementsByClassName('dropdown-item-app-type')];
+    const dropdownTriggerTitleAppType = document.getElementsByClassName('dropdown-trigger-title-app-type')[0];
+    const dropdownTriggerIconAppType = document.querySelector('.dropdown-trigger-icon-app-type img');
+    dropdownItemsAppType.forEach((dropdownItem) => {
+        dropdownItem.addEventListener('click', () => {
+            const dropdownValueAppType = dropdownMapAppType[dropdownItem.getAttribute('data-value')];
+            dropdownTriggerTitleAppType.textContent = dropdownValueAppType.title;
+            dropdownTriggerIconAppType.setAttribute('src', dropdownValueAppType.icon);
+        })
+    });
+}
+
+const dropdownMapAppFilter = {
+    popularity: {
+        icon: '../img/dropdown/filter.svg',
+        title: 'По популярности'
+    },
+    release: {
+        icon: '../img/dropdown/filter.svg',
+        title: 'По дате выхода'
+    },
+};
+
+const triggerAppFilter = document.getElementsByClassName('dropdown-trigger-app-filter')[0];
+const dropdownElAppFilter = document.getElementsByClassName('dropdown-wrapper-app-filter')[0];
+
+if (triggerAppFilter && dropdownElAppFilter) {
+    const dropdownAppFilter = new Tooltip({
+        trigger: triggerAppFilter,
+        tooltip: dropdownElAppFilter,
+        side: Tooltip.SIDES.BOTTOM,
+        offset: '50%',
+        triangleSettings: {
+            sideWidth: 0,
+        },
+        margin: 5,
+        openEvent: Tooltip.OPEN_EVENTS,
+    });
+    dropdownAppFilter.listen();
+
+
+    const dropdownItemsAppFilter = [...document.getElementsByClassName('dropdown-item-app-filter')];
+    const dropdownTriggerTitleAppFilter = document.getElementsByClassName('dropdown-trigger-title-app-filter')[0];
+    const dropdownTriggerIconAppFilter = document.querySelector('.dropdown-trigger-icon-app-filter img');
+    dropdownItemsAppFilter.forEach((dropdownItem) => {
+        dropdownItem.addEventListener('click', () => {
+            const dropdownValueAppFilter = dropdownMapAppFilter[dropdownItem.getAttribute('data-value')];
+            dropdownTriggerTitleAppFilter.textContent = dropdownValueAppFilter.title;
+            dropdownTriggerIconAppFilter.setAttribute('src', dropdownValueAppFilter.icon);
+        })
+    });
+}
