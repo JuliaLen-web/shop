@@ -7678,4 +7678,17 @@ html {
 		height: auto;
 	}
 
+	.dropdown-item {
+		padding: 15px 10px;
+	}
+
+	.dropdown-item-icon {
+		width: 25px;
+	}
+
+	.dropdown-wrapper .dropdown-item-icon img {
+		max-width: 25px;
+		max-height: 25px;
+	}
+
 }
