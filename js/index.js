@@ -866,19 +866,28 @@ const dropdownMap = {
     bitcoin: {
         icon: '../img/payments/bitcoin.svg',
         title: 'Bitcoin',
+        iconClass: 'bitcoin'
     },
-    dating: {
-        icon: '../img/dropdown/fire.svg',
-        title: 'Dating',
+    ymoney: {
+        icon: '../img/payments/ymoney.svg',
+        title: 'ЮMoney',
+        iconClass: 'ymoney'
     },
-    betting: {
-        icon: '../img/dropdown/footbal.svg',
-        title: 'Betting',
+    webmoney: {
+        icon: '../img/payments/webmoney.svg',
+        title: 'WebMoney',
+        iconClass: 'webmoney'
     },
-    gambling: {
-        icon: '../img/dropdown/casino.svg',
-        title: 'Gambling',
+    kiwi: {
+        icon: '../img/payments/qiwi.svg',
+        title: `Qiwi`,
+        iconClass: 'qiwi'
     },
+    card: {
+        icon: '../img/payments/card.svg',
+        title: 'Card',
+        iconClass: 'card'
+    }
 };
 
 const selectedDropdownValue = 'bitcoin';
@@ -903,10 +912,12 @@ dropdown.listen();
 const dropdownItems = [...document.getElementsByClassName('dropdown-item')];
 const dropdownTriggerTitle = document.getElementsByClassName('dropdown-trigger-title')[0];
 const dropdownTriggerIcon = document.querySelector('.dropdown-trigger-icon img');
+const dropdownIconClass = document.getElementsByClassName('dropdown-trigger-icon');
 dropdownItems.forEach((dropdownItem) => {
     dropdownItem.addEventListener('click', () => {
         const dropdownValue = dropdownMap[dropdownItem.getAttribute('data-value')];
         dropdownTriggerTitle.textContent = dropdownValue.title;
         dropdownTriggerIcon.setAttribute('src', dropdownValue.icon);
+        dropdownIconClass.classList.add(dropdownValue.iconClass);
     })
 });

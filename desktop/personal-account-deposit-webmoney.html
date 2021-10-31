@@ -157,7 +157,7 @@
     </div>
   </nav>
   <main class="main">
-    <div class="main__content">
+    <div class="main__content main__content_menu">
       <div class="main__title">Пополнение</div>
 
       <div class="main__nav-personal my-app">
@@ -224,6 +224,70 @@
         <div class="main__payment-form-input-wrapper">
           <input class="main__input" type="text" placeholder="input">
           <button class="main__payment-button green">Пополнить через WebMoney</button>
+        </div>
+      </div>
+
+      <div class="main__payment-mobile">
+        <div class="main__payment-mobile-drop">
+          <div class="dropdown-trigger">
+            <div class="dropdown-trigger-content">
+              <div class="dropdown-trigger-icon webmoney"><img src="../img/payments/webmoney.svg" alt="Bitcoin"></div>
+              <div class="dropdown-trigger-text">
+                <span>Счет пополнения</span>
+                <div class="dropdown-trigger-title">WebMoney</div>
+              </div>
+            </div>
+            <div class="dropdown-trigger-angle">▼</div>
+
+            <div class="dropdown-wrapper">
+              <div class="dropdown">
+                <div class="dropdown-item" data-value="bitcoin">
+                  <div class="dropdown-item-icon"><img src="../img/payments/bitcoin.svg" alt="Bitcoin"></div>
+                  <div class="dropdown-item-title">Bitcoin</div>
+                </div>
+                <div class="dropdown-item" data-value="kiwi">
+                  <div class="dropdown-item-icon"><img src="../img/payments/qiwi.svg" alt="qiwi"></div>
+                  <div class="dropdown-item-title">Qiwi</div>
+                </div>
+                <div class="dropdown-item" data-value="card">
+                  <div class="dropdown-item-icon"><img src="../img/payments/card.svg" alt="card"></div>
+                  <div class="dropdown-item-title">Банковская карта</div>
+                </div>
+                <div class="dropdown-item" data-value="ymoney">
+                  <div class="dropdown-item-icon"><img src="../img/payments/ymoney.svg" alt="ymoney"></div>
+                  <div class="dropdown-item-title">ЮMoney</div>
+                </div>
+                <div class="dropdown-item" data-value="webmoney">
+                  <div class="dropdown-item-icon"><img src="../img/payments/webmoney.svg" alt="webmoney"></div>
+                  <div class="dropdown-item-title">WebMoney</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__payment-form green margin-m">
+          <div class="main__payment-form-title">Укажите суммму пополнения</div>
+          <div class="main__payment-form-input-wrapper">
+            <input class="main__input" type="text" placeholder="input">
+            <button class="main__payment-button green">Пополнить через WebMoney</button>
+          </div>
+        </div>
+
+        <div class="main__payment-description">
+          Курс обновляется каждые 10 минут<br>
+          Сумма Вашего пополнения будет зачислена автоматически
+        </div>
+
+        <div class="main__payment-column-info">
+          <div class="main__payment-column min-sum">
+            <div class="main__payment-column-title">Минимальная сумма</div>
+            <div class="main__payment-column-text">$0.1 или эквивалент 8₽</div>
+          </div>
+
+          <div class="main__payment-column rate">
+            <div class="main__payment-column-title">Курс пополнения</div>
+            <div class="main__payment-column-text">$1 = 76.53₽</div>
+          </div>
         </div>
       </div>
 

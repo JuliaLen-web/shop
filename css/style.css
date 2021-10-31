@@ -5293,7 +5293,6 @@
 
 .dropdown {
 	width: 100%;
-	max-height: 100px;
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
@@ -7502,6 +7501,10 @@ html {
 		margin: 0;
 	}
 
+	.main__notify.warning.ymoney {
+		display: none;
+	}
+
 	.main__payment-mobile {
 		display: flex;
 		flex-direction: column;
@@ -7515,7 +7518,7 @@ html {
 
 	.main__payment-mobile-drop {
 		width: 100%;
-		height: 40px;
+		height: 70px;
 		position: relative;
 	}
 
@@ -7523,8 +7526,10 @@ html {
 		border: 1px solid rgba(151, 174, 225, 0.2);
 		border-radius: 12px;
 		background: #fff;
-		width: calc(100% - 31px);
+		width: 100%;
 		z-index: 2;
+		box-sizing: border-box;
+		padding: 20px;
 	}
 
 	.main__payment-column.min-sum,
@@ -7535,7 +7540,8 @@ html {
 
 	.main__payment-mobile .main__payment-description,
 	.main__payment-mobile .main__payment-form,
-	.main__payment-mobile .main__payment-wallet-wrapper {
+	.main__payment-mobile .main__payment-wallet-wrapper,
+	.main__payment-mobile .main__notify.warning.ymoney {
 		display: flex;
 	}
 
@@ -7543,6 +7549,10 @@ html {
 	.main__payment-mobile .main__payment-wallet-wrapper,
 	.main__payment-mobile .main__payment-form-input-wrapper {
 		flex-wrap: wrap;
+	}
+
+	.main__payment-mobile .main__notify.warning.ymoney {
+		margin: 0 0 15px;
 	}
 
 	.main__payment-mobile .main__payment-button,
@@ -7558,5 +7568,64 @@ html {
 		margin-left: 0;
 	}
 
+	.main__payment-column.rate:not(.bitcoin) {
+		margin-top: 15px;
+	}
 
+	.main__payment-column-info {
+		display: flex;
+	}
+
+	.main__payment-column-info.bitcoin {
+		flex-direction: column;
+	}
+
+	.main__payment-button.green {
+		margin: 15px 0 0;
+	}
+
+	.dropdown-trigger-icon {
+		border-radius: 12px;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.dropdown-trigger-title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 0;
+	}
+
+	.dropdown-trigger-text {
+		margin-left: 10px;
+	}
+
+	.dropdown-trigger-text span {
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 13px;
+		color: #5C72A3;
+		opacity: 0.5;
+		letter-spacing: 0.06px;
+	}
+
+	.dropdown-trigger-icon.qiwi {
+		background: linear-gradient(127deg, #FFB369 0%, #FD8C25 100%);
+	}
+	.dropdown-trigger-icon.card {
+		background: linear-gradient(107.15deg, #0095FF 0%, #0855C4 100%);
+	}
+	.dropdown-trigger-icon.bitcoin {
+		background: linear-gradient(127deg, #FFC759 0%, #FFA902 100%), #E0E5F0;
+	}
+	.dropdown-trigger-icon.ymoney {
+		background: linear-gradient(307deg, #8B3EFC 0%, #AD75FF 100%);
+	}
+	.dropdown-trigger-icon.webmoney {
+		background: linear-gradient(307deg, #116EB3 0%, #1E90CA 100%), linear-gradient(307deg, #8B3EFC 0%, #AD75FF 100%);
+	}
 }
