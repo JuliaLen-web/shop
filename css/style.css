@@ -6605,7 +6605,8 @@ html {
 	.modal-layout-sheets .main__back-link-mobile {
 		position: absolute;
 		left: 10px;
-		top: 27px;
+		top: 8px;
+		color: #1A88F3;
 	}
 
 	.modal-layout-sheets .modal-header {
@@ -7892,5 +7893,11 @@ html {
 	.dropdown-wrapper .dropdown-item-icon img:not(.main__applications-header-dropdown .dropdown-item-icon img) {
 		max-width: 25px;
 		max-height: 25px;
+	}
+
+	.modal-layout-sheets .modal-content .main__api-active-form-content,
+	.modal-layout-sheets .modal-content .main__api-active-description {
+		display: flex;
+		flex-direction: column;
 	}
 }
