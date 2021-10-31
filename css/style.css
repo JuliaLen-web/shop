@@ -7691,4 +7691,141 @@ html {
 		max-height: 25px;
 	}
 
+	.main__basket {
+		padding-bottom: 30px;
+	}
+
+	.modal-layout-basket .modal-content{
+		padding-top: 20px;
+	}
+
+	.modal-layout-basket .main__notify.fb-info {
+		margin-top: 0;
+	}
+
+	.main__section-item-container.basket {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.main__section-item-container.fb-info.green {
+		margin-left: 5px;
+	}
+
+	.main__section-item-container.fb-info.green .main__section-item-value {
+		background: linear-gradient(88.93deg, rgba(49, 188, 105, 0.1) 1.83%, rgba(8, 158, 78, 0.1) 98.17%);
+		color: #089E4E;
+	}
+
+	.main__section-item.basket {
+		box-shadow: none;
+		border: 1px solid rgba(151, 174, 225, 0.2);
+		margin-bottom: 10px;
+		position: relative;
+		flex-wrap: wrap;
+		padding: 10px;
+		border-radius: 12px;
+	}
+
+	.main__section-item-img.basket {
+		min-width: 50px;
+		width: 50px;
+		height: 50px;
+		margin-right: 7px;
+	}
+
+	.main__basket-form {
+		background: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+
+	.main__basket-form-button {
+		margin-bottom: 20px;
+	}
+
+	.main__basket-form-header {
+		border-bottom: 1px dashed rgba(151, 174, 225, 0.2);
+	}
+
+	.main__input.basket-form {
+		background: rgba(151, 174, 225, 0.11);
+		border-radius: 10px;
+		width: 100%;
+		height: 40px;
+	}
+
+	.main__section-item-description.basket {
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.06px;
+		color: #5C72A3;
+		opacity: 0.5;
+	}
+
+	.main__section-item-left {
+		border: none;
+	}
+
+	.main__basket-form-title {
+		display: none;
+	}
+
+	.main__basket .main__section-item-left .main__section-item-container.fb-info:nth-child(2) {
+		display: flex;
+	}
+
+	.main__basket .main__section-item-container.margin-l.fb-info.align-self-flex-start {
+		position: absolute;
+		width: fit-content;
+		right: 0;
+		top: 0;
+	}
+
+	.main__basket .main__section-item-close-button {
+		background: none;
+		width: 30px;
+		height: 30px;
+	}
+
+	.main__basket .main__section-item-close-button-img {
+		width: 20px;
+	}
+
+	.main__section-item-title.basket.bold {
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.main__section-item-left {
+		padding-top: 0;
+	}
+
+	.main__app-header-row-value-button.fb-info {
+		width: 23px;
+		height: 23px;
+	}
+
+	.main__section-item-left .main__section-item-container.fb-info:not(:last-child) {
+		margin-right: 8px;
+		margin-left: 0;
+	}
+	.main__basket .main__section-item-right,
+	.main__basket .main__section-item-left {
+		width: auto;
+	}
+
+	.main__section-item.basket:before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		bottom: 15px;
+		left: -3px;
+		width: 6px;
+		border-radius: 3px;
+		background: linear-gradient(167.13deg, #31BC69 -67.15%, #089E4E 157.95%);
+	}
 }

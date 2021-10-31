@@ -704,7 +704,7 @@ const modals = {
     } : {},
 
     ...triggerBasket && layoutBasket && closeBasket ? {
-        api: new Modal({
+        basket: new Modal({
             triggers: [triggerBasket],
             layout: layoutBasket,
             closeTriggers: [closeBasket],
