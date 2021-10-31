@@ -7626,7 +7626,8 @@ html {
 		height: 30px;
 	}
 
-	.dropdown-trigger-text span {
+	.dropdown-trigger-text span,
+	.main__payment-wallet-text {
 		font-weight: normal;
 		font-size: 11px;
 		line-height: 13px;
@@ -7635,8 +7636,46 @@ html {
 		letter-spacing: 0.06px;
 	}
 
+	.main__payment-wallet-text {
+		flex-basis: 100%;
+	}
+
+	.main__payment-wallet {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -0.15px;
+		width: fit-content;
+		max-width: 100%;
+		overflow-wrap: break-word;
+		box-sizing: border-box;
+		padding-right: 30px;
+	}
+
+	.main__payment-wallet-ok {
+		position: absolute;
+		right: 50px;
+	}
+
 	.main__payment-history {
 		margin-top: 20px;
+	}
+
+	.main__payment-form-text {
+		display: none;
+	}
+
+	.main__payment-form {
+		box-sizing: border-box;
+	}
+
+	.main__payment-form-input-wrapper {
+		width: 100%;
+	}
+
+	.main__payment-button.green {
+		min-height: 40px;
+		height: auto;
 	}
 
 }
