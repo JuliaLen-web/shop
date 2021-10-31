@@ -634,6 +634,10 @@ const triggerApi = document.getElementsByClassName('modal-trigger-api-active')[0
 const layoutApi = document.getElementsByClassName('modal-layout-api-active')[0];
 const closeApi = document.querySelector('.modal-layout-api-active .modal-close');
 
+const triggerBasket = document.getElementsByClassName('modal-trigger-basket')[0];
+const layoutBasket = document.getElementsByClassName('modal-layout-basket')[0];
+const closeBasket = document.querySelector('.modal-layout-basket .modal-close');
+
 const triggerBonus = document.getElementsByClassName('modal-trigger-bonus')[0];
 const layoutBonus = document.getElementsByClassName('modal-layout-bonus')[0];
 const closeBonus = document.querySelector('.modal-layout-bonus .modal-close');
@@ -696,6 +700,14 @@ const modals = {
             triggers: [triggerApi],
             layout: layoutApi,
             closeTriggers: [closeApi],
+        }),
+    } : {},
+
+    ...triggerBasket && layoutBasket && closeBasket ? {
+        api: new Modal({
+            triggers: [triggerBasket],
+            layout: layoutBasket,
+            closeTriggers: [closeBasket],
         }),
     } : {},
 

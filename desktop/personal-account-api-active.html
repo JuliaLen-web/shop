@@ -1116,7 +1116,7 @@
       <img class="footer__item-icon" src="../img/footer/profile_active.svg">
       <span class="footer__item-text">Профиль</span>
     </a>
-    <a class="footer__item" href="javascript:">
+    <a class="footer__item modal-trigger-basket modal-open-basket" href="javascript:">
       <img class="footer__item-icon" src="../img/footer/shopping-basket.svg">
       <img class="footer__item-icon" src="../img/footer/shopping-basket_active.svg">
       <span class="footer__item-text">Корзина</span>
@@ -1164,8 +1164,214 @@
         status="error" - В запросе есть ошибки, смотрите error_id<br>
         status="ban" - Ключ был заблокирован за нарушение правил, смотрите ban_reason
       </div>
-
     </div>
+
+    <div class="modal-footer">
+      <button class="main__api-active-form-button">Выполнить</button>
+    </div>
+  </div>
+</div>
+<div class="modal-layout modal-layout-basket modal-layout-sheets">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-header-button modal-close"></span>
+      <a class="main__back-link-mobile" href="javascript:">Назад</a>
+      <div class="modal-header-title">Проверка API-ключа</div>
+    </div>
+
+    <div class="modal-content">
+      <div class="main__basket">
+        <div class="main__basket-items">
+          <div class="main__section-item basket">
+            <img class="main__section-item-img basket" src="../img/main-item/main-item-2.png">
+
+            <div class="main__section-item-right basket">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title basket bold">Cash casino app</div>
+                <div class="main__section-item-icons">
+                  <img class="main__section-item-icon" src="../img/round-ios.svg">
+                  <img class="main__section-item-icon" src="../img/round-android.svg">
+                  <img class="main__section-item-icon" src="../img/flag-ua.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="main__section-item-container fb-info basket center-position">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title light">Наличие</div>
+                <div class="main__section-item-value">35 шт</div>
+              </div>
+            </div>
+
+            <div class="main__section-item-left">
+              <div class="main__section-item-container fb-info margin-l">
+                <div class="main__app-header-row fb-info">
+                  <div class="main__section-item-title light">Количество</div>
+                  <div class="main__app-header-row-value fb-info">
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/minus-blue.svg">
+                    </div>
+                    <div class="main__app-header-row-value-text">2</div>
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/plus-blue.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light right fb-info">Цена</div>
+                <div class="main__section-item-price fb-info">$1.50</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light green right fb-info">Сумма</div>
+                <div class="main__section-item-price fb-info">$3.00</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info align-self-flex-start">
+                <button class="main__section-item-close-button">
+                  <img class="main__section-item-close-button-img" src="../img/close-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__section-item basket">
+            <img class="main__section-item-img basket" src="../img/main-item/main-item-10.png">
+
+            <div class="main__section-item-right basket">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title basket bold">Cash casino app</div>
+                <div class="main__section-item-icons">
+                  <img class="main__section-item-icon" src="../img/round-ios.svg">
+                  <img class="main__section-item-icon" src="../img/round-android.svg">
+                  <img class="main__section-item-icon" src="../img/flag-ua.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="main__section-item-container fb-info basket center-position">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title light">Наличие</div>
+                <div class="main__section-item-value">35 шт</div>
+              </div>
+            </div>
+
+            <div class="main__section-item-left">
+              <div class="main__section-item-container fb-info margin-l">
+                <div class="main__app-header-row fb-info">
+                  <div class="main__section-item-title light">Количество</div>
+                  <div class="main__app-header-row-value fb-info">
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/minus-blue.svg">
+                    </div>
+                    <div class="main__app-header-row-value-text">2</div>
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/plus-blue.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light right fb-info">Цена</div>
+                <div class="main__section-item-price fb-info">$1.50</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light green right fb-info">Сумма</div>
+                <div class="main__section-item-price fb-info">$3.00</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info align-self-flex-start">
+                <button class="main__section-item-close-button">
+                  <img class="main__section-item-close-button-img" src="../img/close-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__section-item basket">
+            <img class="main__section-item-img basket" src="../img/main-item/main-item-6.png">
+
+            <div class="main__section-item-right basket">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title basket bold">Cash casino app</div>
+                <div class="main__section-item-icons">
+                  <img class="main__section-item-icon" src="../img/round-ios.svg">
+                  <img class="main__section-item-icon" src="../img/round-android.svg">
+                  <img class="main__section-item-icon" src="../img/flag-ua.svg">
+                </div>
+              </div>
+            </div>
+
+            <div class="main__section-item-container fb-info basket center-position">
+              <div class="main__section-item-container fb-info">
+                <div class="main__section-item-title light">Наличие</div>
+                <div class="main__section-item-value">35 шт</div>
+              </div>
+            </div>
+
+            <div class="main__section-item-left">
+              <div class="main__section-item-container fb-info margin-l">
+                <div class="main__app-header-row fb-info">
+                  <div class="main__section-item-title light">Количество</div>
+                  <div class="main__app-header-row-value fb-info">
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/minus-blue.svg">
+                    </div>
+                    <div class="main__app-header-row-value-text">2</div>
+                    <div class="main__app-header-row-value-button fb-info">
+                      <img class="main__app-header-row-value-button-icon" src="../img/plus-blue.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light right fb-info">Цена</div>
+                <div class="main__section-item-price fb-info">$1.50</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info">
+                <div class="main__section-item-title light green right fb-info">Сумма</div>
+                <div class="main__section-item-price fb-info">$3.00</div>
+              </div>
+
+              <div class="main__section-item-container margin-l fb-info align-self-flex-start">
+                <button class="main__section-item-close-button">
+                  <img class="main__section-item-close-button-img" src="../img/close-grey.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__basket-form">
+          <div class="main__basket-form-header">
+            <div class="main__basket-form-title">Промокод</div>
+            <input class="main__input basket-form" type="text" placeholder="2847490" value="2847490">
+          </div>
+          <div class="main__basket-form-rows">
+            <div class="main__basket-form-row">
+              <div class="main__basket-form-row-item">Cумма</div>
+              <div class="main__basket-form-row-item">$99</div>
+            </div>
+            <div class="main__basket-form-row">
+              <div class="main__basket-form-row-item">Cкидка</div>
+              <div class="main__basket-form-row-item">-$3</div>
+            </div>
+            <div class="main__basket-form-row bold">
+              <div class="main__basket-form-row-item">К оплате</div>
+              <div class="main__basket-form-row-item">$96</div>
+            </div>
+          </div>
+          <button class="main__basket-form-button disabled">Оплатить</button>
+        </div>
+      </div>
+    </div>
+
     <div class="modal-footer">
       <button class="main__api-active-form-button">Выполнить</button>
     </div>
