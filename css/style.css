@@ -5380,7 +5380,6 @@
 	border-bottom-left-radius: 100px;
 }
 
-
 html,
 body,
 p,
@@ -6406,6 +6405,10 @@ html {
 
 	.main__app-settings-table-line {
 		justify-content: space-between;
+	}
+
+	.main__basket-form {
+		min-width: 300px;
 	}
 }
 
@@ -7763,6 +7766,7 @@ html {
 		letter-spacing: 0.06px;
 		color: #5C72A3;
 		opacity: 0.5;
+		display: flex;
 	}
 
 	.main__section-item-left {
