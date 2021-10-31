@@ -864,23 +864,23 @@ if (document.querySelector('.main__api-active-form-header-right-top')) {
 
 const dropdownMap = {
     bitcoin: {
-        icon: '../img/payments/bitcoin.svg',
+        icon: '../img/dropdown/mobile/bitcoin-bg.svg',
         title: 'Bitcoin'
     },
     ymoney: {
-        icon: '../img/payments/ymoney.svg',
+        icon: '../img/dropdown/mobile/ymoney-bg.svg',
         title: 'ЮMoney'
     },
     webmoney: {
-        icon: '../img/payments/webmoney.svg',
+        icon: '../img/dropdown/mobile/webmoney-bg.svg',
         title: 'WebMoney'
     },
     kiwi: {
-        icon: '../img/payments/qiwi.svg',
+        icon: '../img/dropdown/mobile/qiwi-bg.svg',
         title: `Qiwi`
     },
     card: {
-        icon: '../img/payments/card.svg',
+        icon: '../img/dropdown/mobile/card-bg.svg',
         title: 'Card'
     }
 };
