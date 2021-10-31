@@ -2654,6 +2654,11 @@
 	color: rgba(92, 114, 163, 0.8);
 }
 
+.main__applications-header-dropdowns {
+	display: flex;
+	margin-left: auto;
+}
+
 .main__applications-header-dropdown.type {
 	margin-left: auto;
 }
@@ -7715,7 +7720,7 @@ html {
 		position: relative;
 	}
 
-	.dropdown-trigger {
+	.dropdown-trigger:not(.main__applications-header-dropdown .dropdown-trigger) {
 		border: 1px solid rgba(151, 174, 225, 0.2);
 		border-radius: 12px;
 		background: #fff;
@@ -7794,7 +7799,7 @@ html {
 		margin: 15px 0 0;
 	}
 
-	.dropdown-trigger-icon {
+	.dropdown-trigger-icon:not(.main__applications-header-dropdown .dropdown-trigger-icon) {
 		border-radius: 12px;
 		width: 30px;
 		height: 30px;
@@ -7810,11 +7815,11 @@ html {
 		margin-left: 0;
 	}
 
-	.dropdown-trigger-text {
+	.dropdown-trigger-text:not(.main__applications-header-dropdown.filter .dropdown-trigger-text) {
 		margin-left: 10px;
 	}
 
-	.dropdown-trigger-icon img {
+	.dropdown-trigger-icon img:not(.main__applications-header-dropdown .dropdown-trigger-icon img) {
 		width: 30px;
 		height: 30px;
 	}
@@ -7827,6 +7832,11 @@ html {
 		color: #5C72A3;
 		opacity: 0.5;
 		letter-spacing: 0.06px;
+	}
+
+	.main__applications-header-dropdown.filter .dropdown-trigger-icon {
+		display: none;
+		margin-right: 10px;
 	}
 
 	.main__payment-wallet-text {
@@ -7875,11 +7885,11 @@ html {
 		padding: 15px 10px;
 	}
 
-	.dropdown-item-icon {
+	.dropdown-item-icon:not(.main__applications-header-dropdown .dropdown-item-icon) {
 		width: 25px;
 	}
 
-	.dropdown-wrapper .dropdown-item-icon img {
+	.dropdown-wrapper .dropdown-item-icon img:not(.main__applications-header-dropdown .dropdown-item-icon img) {
 		max-width: 25px;
 		max-height: 25px;
 	}
