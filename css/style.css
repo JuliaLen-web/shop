@@ -2602,6 +2602,7 @@
 	letter-spacing: -0.15px;
 	color: #5C72A3;
 	width: 346px;
+	margin-right: 10px;
 }
 
 .main__swiper-item {
@@ -6010,6 +6011,7 @@ html {
 	.main__swiper {
 		margin-bottom: 10px;
 		width: 100%;
+		margin-right: 0;
 	}
 
 	.main__swiper,
@@ -6019,8 +6021,7 @@ html {
 
 	.main__applications-header-dropdown.type,
 	.main__applications-header-dropdown.filter {
-		margin-left: 0;
-		margin-bottom: 10px;
+		margin: 0 2px 10px;
 	}
 
 	.main__section-item {
@@ -7893,6 +7894,18 @@ html {
 	.dropdown-wrapper .dropdown-item-icon img:not(.main__applications-header-dropdown .dropdown-item-icon img) {
 		max-width: 25px;
 		max-height: 25px;
+	}
+
+	.main__applications-header-dropdown {
+		flex: auto;
+	}
+
+	.main__applications-header-dropdown .dropdown-trigger {
+		min-width: auto;
+	}
+	.main__applications-header-dropdowns {
+		margin: 0 -2px;
+		width: calc(100% + 4px);
 	}
 
 	.modal-layout-sheets .modal-content .main__api-active-form-content,
